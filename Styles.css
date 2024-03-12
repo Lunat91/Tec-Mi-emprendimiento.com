@@ -36,8 +36,12 @@ h1{
 }
 
 h2{
-    margin: 0 163px;
+  margin: 0 163px;
 }
+h3{
+    margin: 20 10px;
+    text-align: center;
+  }
 
 p{
     text-align: center;
@@ -104,6 +108,10 @@ nav ul{
 #botonv{
     margin-left: 10px;
     background-color:#78A55A;
+}
+#botonrosa{
+    margin-left: 10px;
+    background-color:#F5A386;
 }
 
 li{
@@ -211,5 +219,10 @@ nav ul li a{
 #preciobotones{
     display: flex;
     align-items: center;
+    margin-right: 0;
+}
+#botonescentrados{
+    display: flex;
+    justify-content: center;
     margin-right: 0;
 }
