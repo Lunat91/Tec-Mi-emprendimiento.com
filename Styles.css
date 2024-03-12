@@ -9,7 +9,8 @@ header{
 }
 
 .margenes_generales{
-    margin: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .margenes_carrusel{
