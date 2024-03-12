@@ -87,6 +87,25 @@ nav ul{
     display: flex;
 }
 
+.botones{
+    display: block;
+    background-color: #F6C708;
+    text-align: center;
+    height: fit-content;
+    border-radius: 2em;
+    padding: .5em .5em;
+    margin: .5em;
+    color: aliceblue;
+    font-weight: lighter;
+    margin-right: 0;
+    margin-left: 40px;
+}
+
+#botonv{
+    margin-left: 10px;
+    background-color:#78A55A;
+}
+
 li{
     display: inline;
     margin-right: 10px;
@@ -119,11 +138,26 @@ nav ul li a{
     font-weight: lighter;
 }
 
+#Nombre_p{
+    justify-content: center;
+    text-align: left;
+    margin-right: 0px;
+    margin-top: 50px;
+    margin-left: 10px;
+}
+
 #descrip_e{
     text-align: left;
     margin-left: 96px;
     font-weight: lighter;
     margin-right: 0;
+    font-size:20px ;
+}
+
+#descrip_p{
+    text-align: left;
+    font-weight: lighter;
+    margin: 30px 0 0 10px;
     font-size:20px ;
 }
 
@@ -153,7 +187,29 @@ nav ul li a{
     margin-top: 30px;;
 }
 
+.info_producto{
+    display: flex;
+}
+
 #pligther{
     font-weight: 12px;
     text-align: center;
+}
+
+#imgprod{
+    width: 248px;
+    height: 248px;
+    margin-top: 40px ;
+}
+
+.Price{
+    font-weight:bold;
+    text-align: left;
+    font-size: 24px;
+}
+
+#preciobotones{
+    display: flex;
+    align-items: center;
+    margin-right: 0;
 }
