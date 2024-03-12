@@ -8,6 +8,14 @@ header{
     margin: 0%;
 }
 
+.margenes_generales{
+    margin: 10%;
+}
+
+.margenes_carrusel{
+    margin: 10%;
+    margin-right: 0%; /* Establece un margen de 20px alrededor del contenedor */
+}
 
 .encabezado {
     
