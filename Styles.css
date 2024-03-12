@@ -1,9 +1,97 @@
+
+body{
+    margin: 0
+}
+
+header{
+    margin: none
+}
+
 .encabezado {
-    width: 2000px;
-    height: 84px;
+    width:auto;
+    height: 60px;
     background: #EEFFE0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: none
 }
 
 h1{
-    color: #78A55A
+    color: #78A55A;
+    text-align: center;
+}
+
+h2{
+    margin: 0 163px;
+}
+
+p{
+    text-align: center;
+    margin: 0 10px;
+}
+
+
+.imgI{
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+
+.img1{
+    width: 160px;
+    border-radius: 160px;
+    margin-right: 10px;
+}
+
+.contenedor{
+    display: flex;
+    margin: 10px 0;
+    margin-left: 10px;
+}
+
+.carrusel{
+    width:auto;
+    max-width: 120cm;
+    display: flex;
+    overflow-y: auto;
+}
+
+.carrusel .img{
+    width: 163px;
+    height: 163px;
+}
+
+nav ul{
+    list-style-type: none;
+    text-align: center;
+    display: flex;
+}
+
+li{
+    display: inline;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+
+nav ul li a{
+    color: black;
+    text-decoration: none;
+    display: block;
+    padding: .5em 1em;
+    margin: .5em;
+}
+
+.img2{
+    margin-top: 30px;
+    width: 95px;
+}
+
+.pie{
+    width:auto;
+    height:fit-content;
+    background: #EEFFE0;
 }
