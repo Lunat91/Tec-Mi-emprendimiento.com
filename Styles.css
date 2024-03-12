@@ -1,13 +1,16 @@
 
 body{
-    margin: 0
+    font-family: Geneva, Verdana, sans-serif;
+    margin:0%;
 }
 
 header{
-    margin: none
+    margin: 0%;
 }
 
+
 .encabezado {
+    
     width:auto;
     height: 60px;
     background: #EEFFE0;
@@ -16,6 +19,7 @@ header{
     align-items: center;
     margin: none
 }
+
 
 h1{
     color: #78A55A;
