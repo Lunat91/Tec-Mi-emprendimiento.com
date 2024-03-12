@@ -44,7 +44,10 @@ p{
     margin: 0 10px;
 }
 
-
+a{
+    color: black;
+    text-decoration: none;
+}
 .imgI{
     width: 40px;
     height: 40px;
@@ -55,7 +58,8 @@ p{
 
 .img1{
     width: 160px;
-    border-radius: 160px;
+    height: 160px;
+    border-radius: 200px;
     margin-right: 10px;
 }
 
@@ -91,8 +95,6 @@ li{
 
 
 nav ul li a{
-    color: black;
-    text-decoration: none;
     display: block;
     padding: .5em 1em;
     margin: .5em;
@@ -107,4 +109,51 @@ nav ul li a{
     width:auto;
     height:fit-content;
     background: #EEFFE0;
+}
+
+#Nombre_e{
+    justify-content: center;
+    text-align: left;
+    margin-left: 0px;
+    margin-top: 50px;
+    font-weight: lighter;
+}
+
+#descrip_e{
+    text-align: left;
+    margin-left: 96px;
+    font-weight: lighter;
+    margin-right: 0;
+    font-size:20px ;
+}
+
+#redsocial
+{
+    margin-top: 30px;
+    text-align: left;
+    margin-left: 96px;
+    font-size:16px;
+}
+
+.info_empresa{
+    display: flex;
+    margin-top: 20px;
+}
+
+.Productos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.Productos .imgp
+{
+    width: 163px;
+    height: 163px;
+    margin-top: 30px;;
+}
+
+#pligther{
+    font-weight: 12px;
+    text-align: center;
 }
