@@ -5,7 +5,7 @@
     border: 1px solid #ccc; /* Añade un borde de 1px sólido con color gris claro */
 }
 
-/* Letra geeneral*/
+/* Letra general*/
 body{
     font-family: Geneva, Verdana, sans-serif;
 }
@@ -50,6 +50,7 @@ h1{
 
 h3{
     text-align: center;
+    justify-content: center;
   }
 
 p{
@@ -75,12 +76,26 @@ a{
     border-radius: 200px;
     margin-right: 10px;
 }
+.imgperfil{
+    width: 120px;
+    height: 120px;
+    border-radius: 200px;
+    margin: 0 100px;
+}
+
 
 .contenedor{
     display: flex;
     margin: 10px 0;
     margin-left: 10px;
 }
+.contenedor2{
+    display: flex;
+    margin: 10px 0;
+    margin-left: 10px;
+    justify-content: center;
+}
+
 
 .carrusel{
     width:auto;
@@ -187,6 +202,10 @@ nav ul li a{
 }
 
 .info_empresa{
+    display: flex;
+    margin-top: 20px;
+}
+.perfiltitulo{
     display: flex;
     margin-top: 20px;
 }
