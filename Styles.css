@@ -296,4 +296,29 @@ button {
     
 }
 
+.Pago-button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto; /* Centrar el botón */
+    width: fit-content; /* Ancho automático según el contenido */
+    text-align: center;
+    
+}
 
+.producto {
+    display: flex;
+    flex-direction: column; /* Columna */
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.producto img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 5px; /* Espacio entre la imagen y el texto */
+}
