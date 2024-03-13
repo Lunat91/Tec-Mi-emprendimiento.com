@@ -52,6 +52,7 @@ h1{
 
 h2{
     margin: 0 163px;
+    font-size: 24px;
 }
 
 p{
@@ -256,3 +257,42 @@ nav ul li a{
     align-items: center;
     margin-right: 0;
 }
+
+.search-container {
+    background-color: #EEFFE0; /* Color verde pálido claro */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center; /* Centra el contenido dentro de la caja de búsqueda */
+}
+
+button {
+    padding: 10px 20px;
+    margin-right: 10px; 
+    background-color: #EEFFE0; /* Color verde pálido claro */
+    border-radius: 5px; /* Añade borde redondeado */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+
+.button-link {
+    text-decoration: none;
+    color: inherit;
+    margin: 5px;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+     
+}
+
+.card {
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    width: 80%; /* Establece el ancho al 80% */
+    max-width: 600px; /* Ancho máximo de 600px */
+    
+}
+
+

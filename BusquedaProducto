@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi emprendimiento</title>
+    <link rel="stylesheet" href="Styles.css">
+</head>
+<body>
+    <header class="encabezado"> 
+        <a href="INDEX.html">
+            <img src="Images\Logos\Miemprendimiento.png" alt="menú" class="imgI">
+        </a>
+        <a href="Menu.html">
+            <img src="Images/Logos/menu.png" alt="menú" class="imgI">
+        </a>
+        <a href="Busqueda.html">
+            <img src="Images\Logos\buscar.png" alt="búsqueda" class="imgI"> 
+        </a>
+        <a href="Usuario.html">
+            <img src="Images\Logos\usuario.png" alt="usuario" class="imgI">
+        </a>
+        <a href="Carrito.html">
+            <img src="Images\Logos\carro-de-la-compra.png" alt="carrito" class="imgI">
+        </a>
+    </header>
+
+   
+</body>
+</html>

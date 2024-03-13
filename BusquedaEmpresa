@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi emprendimiento</title>
+    <link rel="stylesheet" href="Styles.css">
+ </head>
+ <body>
+    <header class="encabezado"> 
+        <a href="INDEX.html">
+            <img src="Images\Logos\Miemprendimiento.png" alt="menú" class="imgI">
+        </a>
+        <a href="Menu.html">
+            <img src="Images/Logos/menu.png" alt="menú" class="imgI">
+        </a>
+        <a href="Busqueda.html">
+            <img src="Images\Logos\buscar.png" alt="búsqueda" class="imgI"> 
+        </a>
+        <a href="Usuario.html">
+            <img src="Images\Logos\usuario.png" alt="usuario" class="imgI">
+        </a>
+        <a href="Carrito.html">
+            <img src="Images\Logos\carro-de-la-compra.png" alt="carrito" class="imgI">
+        </a>
+    </header>
+
+    <a href="Empresa1.html" class="container">
+        <div class="header">Búsqueda: por empresa</div>
+
+        <div class="card">
+            <img src="Images/Logos/Empresa 1.jpeg" alt="Logo empresa 1" class="img1">
+            <h2>Rótelo y péguelo</h2>
+            <p>Stickers en vinilo adhesivo<br>Resistentes al agua<br>Ideal para interior o exterior</p>
+        </div>
+    </a>
+
+    <a href="pagina_destino1.html" class="container">
+        <div class="card">
+            <img src="Images/Logos/Empresa 2.jpeg" alt="Logo empresa 1" class="img1">
+            <h2>Canutos</h2>
+            <p>Productos de todo tipo para el cuidado de perros y gatos.<br>Accesorios, juguetes y más!</p>
+        </div>
+    </a>
+
+        <a href="pagina_destino1.html" class="container">
+        <div class="card">
+            <img src="Images/Logos/EMPRESA 3.jpeg" alt="Logo empresa 1" class="img1">
+            <h2>Metamorfosis artesana</h2>
+            <p>Tejidos hechos a mano Decoración, llaveros y muñecos.</p>
+        </div>
+    </a>
+
+        <a href="pagina_destino1.html" class="container">
+        <div class="card">
+            <img src="Images/Logos/EMPRESA 4.jpeg" alt="Logo empresa 1" class="img1">
+            <h2>Bizunico</h2>
+            <p>Aretes, collares, y pulseras hechas a mano.Marcando la diferencia con amor.</p>
+        </div>
+    </div>
+ </a>
+    <footer class="pie">
+        <center> <img src="Images/Logos/Re-brand logo final.png" alt="Moon Desing" class="img2"> </center>
+        <nav>
+            <ul>
+                <li><a href="INDEX.html">Home</a></li>
+                <li><a href="Busqueda.html">Búsqueda</a></li>
+                <li><a href="INDEX.html">Carrito de compras</a></li>
+                <li><a href="Usuario.html">Usuario</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+</body>
+</html>
+
+
+
+   
+    
+     
