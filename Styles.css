@@ -96,7 +96,9 @@ a{
     justify-content: center;
 }
 
-
+.cambiarColor:active {
+    background-color: #D8D4D4; /* Cambia el color de fondo al hacer clic */
+}
 .carrusel{
     width:auto;
     max-width: 120cm;
@@ -225,6 +227,7 @@ nav ul li a{
     height: 163px;
     margin-top: 30px;;
 }
+
 
 .info_producto{
     display: flex;
