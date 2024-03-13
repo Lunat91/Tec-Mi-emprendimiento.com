@@ -2,10 +2,12 @@
 body{
     font-family: Geneva, Verdana, sans-serif;
     margin:0%;
+   
 }
 
 header{
     margin: 0%;
+  
 }
 
 .margenes_generales{
@@ -37,6 +39,7 @@ h1{
 
 h2{
     margin: 0 163px;
+    font-size: 24px; /* Aumenta el tamaño del texto del encabezado */
 }
 
 p{
@@ -212,4 +215,27 @@ nav ul li a{
     display: flex;
     align-items: center;
     margin-right: 0;
+}
+
+/*Para los botones de busqueda*/
+.search-container {
+    background-color: #EEFFE0;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center; /* Centra el contenido dentro de la caja de búsqueda */
+}
+
+button {
+    padding: 10px 20px;
+    margin-right: 10px; 
+    background-color: #EEFFE0; /* Color verde pálido claro */
+    border-radius: 5px; /* Añade borde redondeado */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+
+/* Estilos para los enlaces que contienen los botones */
+.button-link {
+    text-decoration: none; /* Quita el subrayado del enlace */
+    color: inherit; /* Hereda el color del texto del contenedor padre */
+    margin: 5px; /* Añade un pequeño margen entre los botones */
 }
