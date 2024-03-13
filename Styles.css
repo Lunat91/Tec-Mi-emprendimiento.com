@@ -286,10 +286,11 @@ button {
 }
 
 .card {
+    position: relative;
+    display: flex;
+    margin-top: 20px;
     background-color: #EEFFE0;
     border: 1px solid black;
-    padding: 10px;
-    margin: 10px;
     border-radius: 5px;
     width: 80%; /* Establece el ancho al 80% */
     max-width: 600px; /* Ancho máximo de 600px */
