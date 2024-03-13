@@ -35,7 +35,7 @@
         </div>
     </a>
 
-    <a href="pagina_destino1.html" class="container">
+    <a href="Empresa2.html" class="container">
         <div class="card">
             <img src="Images/Logos/Empresa 2.jpeg" alt="Logo empresa 1" class="img1">
             <h2>Canutos</h2>
@@ -43,7 +43,7 @@
         </div>
     </a>
 
-        <a href="pagina_destino1.html" class="container">
+        <a href="Empresa3.html" class="container">
         <div class="card">
             <img src="Images/Logos/EMPRESA 3.jpeg" alt="Logo empresa 1" class="img1">
             <h2>Metamorfosis artesana</h2>
@@ -51,7 +51,7 @@
         </div>
     </a>
 
-        <a href="pagina_destino1.html" class="container">
+        <a href="Empresa4.html" class="container">
         <div class="card">
             <img src="Images/Logos/EMPRESA 4.jpeg" alt="Logo empresa 1" class="img1">
             <h2>Bizunico</h2>

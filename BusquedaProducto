@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi emprendimiento</title>
     <link rel="stylesheet" href="Styles.css">
-</head>
-<body>
+ </head>
+ <body>
     <header class="encabezado"> 
         <a href="INDEX.html">
             <img src="Images\Logos\Miemprendimiento.png" alt="menú" class="imgI">
@@ -25,6 +25,51 @@
         </a>
     </header>
 
-   
+    <a href="Empresa2.html" class="container">
+        <div class="header">Búsqueda: por producto</div>
+
+        <div class="card">
+            <img src="Images\Logos\Mascotas.png" alt="Logo empresa 1" class="img1">
+            <h2>Mascotas</h2>
+            <p>Juguetes, platos, collores, camas. etc.</p>
+        </div>
+    </a>
+
+    <a href="Empresa4.html" class="container">
+        <div class="card">
+            <img src="Images\Logos\accesorios.png" alt="Logo empresa 1" class="img1">
+            <h2>Accesorios</h2>
+            <p>Aretes, collares, earcuffs, pulseras, etc.</p>
+        </div>
+    </a>
+
+        <a href="Empresa3.html" class="container">
+        <div class="card">
+            <img src="Images\Logos\Tejidos.png" alt="Logo empresa 1" class="img1">
+            <h2>Tejidos</h2>
+            <p>Llaveros, ropa, peluches, alfombras, etc.</p>
+        </div>
+    </a>
+
+        <a href="Empresa1.html" class="container">
+        <div class="card">
+            <img src="Images\Logos\Stickers.png" alt="Logo empresa 1" class="img1">
+            <h2>Stickers</h2>
+            <p>En vinilo adhesivo</p>
+        </div>
+    </div>
+ </a>
+    <footer class="pie">
+        <center> <img src="Images/Logos/Re-brand logo final.png" alt="Moon Desing" class="img2"> </center>
+        <nav>
+            <ul>
+                <li><a href="INDEX.html">Home</a></li>
+                <li><a href="Busqueda.html">Búsqueda</a></li>
+                <li><a href="INDEX.html">Carrito de compras</a></li>
+                <li><a href="Usuario.html">Usuario</a></li>
+            </ul>
+        </nav>
+    </footer>
+
 </body>
 </html>
