@@ -431,3 +431,34 @@ button {
     height: 20px;
     background-color: rgb(186, 186, 186);
 }
+
+.modal{
+    position: fixed;
+    top: 60px;
+    left: 0;
+    right: 0;
+    bottom: 440px;
+    background-color: #EEFFE0;
+    display: none;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    align-items: center;
+}
+
+.modal-container {
+    height: 90px;
+    margin: auto;
+    padding: 3em 3.5rem;
+    gap: 1em;
+    place-items: center;
+    grid-auto-columns: 100%;
+}
+
+#btn-modal
+{
+    display: none;
+}
+
+#btn-modal:checked ~.modal{
+     display: flex;
+}
