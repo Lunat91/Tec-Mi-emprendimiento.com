@@ -20,10 +20,10 @@ header{
 
 
 .margenes_generales{
-    margin-top: 10px;
+    margin-top: 5%;
     margin-left: 20%;
     margin-right: 20%;
-    margin-bottom: 10px;
+    margin-bottom: 5%;
 }
 /*border: 4px solid #ed0000;  Añade un borde de 1px sólido con color gris claro */
 
@@ -184,6 +184,9 @@ nav ul li a{
 
 .pie {
     width: auto;
+    margin-top: 30px;
+    padding-top: 10px;
+    padding-bottom: 20px;
     height: fit-content;
     background: #EEFFE0;
     text-align: center; 
