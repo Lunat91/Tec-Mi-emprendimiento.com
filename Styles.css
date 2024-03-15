@@ -313,11 +313,24 @@ button {
     cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
 }
 
+#lalal{
+    background-color: #f6c60887;
+    width:300px;
+    border-radius: 20px;
+    padding: none;
+    margin: none
+}
+
 .button-link {
     text-decoration: none;
     color: inherit;
     margin: 5px;
 }
+
+#buttonmenu{
+    margin: 0;
+}
+
 .container {
     display: flex;
     flex-direction: column;
@@ -395,6 +408,13 @@ button {
     justify-content: space-between;
 }
 
+.flexspace1{ /*clase usada para poder justificar el espacio entre componentes, usado en producto1*/
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+}
+
 .estre{
     width: 35px;
     height: 35px;
@@ -412,27 +432,74 @@ button {
     left: 0;
     right: 0;
     bottom: 440px;
-    background-color: #EEFFE0;
+    background-color: #CAD8BF;
     display: none;
     border-bottom-left-radius: 40px;
     border-bottom-right-radius: 40px;
     align-items: center;
+    z-index: 100;
 }
 
 .modal-container {
     height: 90px;
     margin: auto;
     padding: 3em 3.5rem;
-    gap: 1em;
     place-items: center;
     grid-auto-columns: 100%;
 }
 
-#btn-modal
+#btn-modaaal
 {
     display: none;
 }
 
-#btn-modal:checked ~.modal{
+#btn-modaaal:checked ~.modal{
      display: flex;
+}
+
+.modal1{
+    position: fixed;
+    top: 60px;
+    left: 0;
+    right: 50px;
+    bottom: 240px;
+    max-width: 400px;
+    background-color: #EEFFE0;
+    display: none;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    align-items: center;
+    z-index: 100;
+}
+
+.modal-container1 {
+    height: 90px;
+    width: 300px;
+    min-width: 100px;
+    margin: auto;
+    padding: 3em 3.5rem;
+    place-items: center;
+    grid-auto-columns: 100%;
+    position: fixed;
+    top: 80px;
+    left: 0px;
+}
+
+
+#btn-modal1
+{
+    display: none;
+}
+
+#btn-modal1:checked ~.modal1{
+     display: flex;
+}
+
+#h2m{
+    margin: 20px 0;
+    text-align: center;
+}
+
+#buttonmenu{
+    margin: 10px 0;
 }
