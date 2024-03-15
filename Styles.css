@@ -2,9 +2,9 @@
 *{ 
     margin: 0%;
     padding: 0%;;
+    border: 1px solid #ccc;
 }
 
-/*border: 1px solid #ccc;*/
 
 
 /* Letra general*/
@@ -89,6 +89,7 @@ a{
     border-radius: 200px;
     margin-right: 10px;
 }
+
 .imgperfil{
     width: 120px;
     height: 120px;
@@ -102,6 +103,7 @@ a{
     margin: 10px 0;
     margin-left: 10px;
 }
+
 .contenedor2{
     display: flex;
     margin: 10px 0;
@@ -112,6 +114,7 @@ a{
 .cambiarColor:active {
     background-color: #D8D4D4; /* Cambia el color de fondo al hacer clic */
 }
+
 .carrusel{
     width:auto;
     max-width: 120cm;
@@ -161,6 +164,12 @@ ul{
     justify-content: space-between;
     align-items: center;
     margin: none
+}
+
+#nadademg /*id hecha para la UL de bon¿tones y precios*/
+{
+    margin-left: 0;
+    margin-right: 0;
 }
 
 li{
@@ -352,5 +361,47 @@ button {
 .producto img {
     width: 100px;
     height: 100px;
-    margin-bottom: 5px; /* Espacio entre la imagen y el texto */
+    margin-bottom: 5px; /* Espacio entre la imagen y el texto*/
+}
+
+#h2sm{ /*hecho para que el titulo h2 no tenga margenes:) usado el producto 1*/
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#botonAdd /*para que el botón no tenga margenes usado en producto 1*/
+{
+    margin-left: 0;
+    text-align: center;
+}
+
+.h2n{ /*adecue h2 para calificaciones usado en prodcuto1*/
+    margin: 6px 0 0 5px;
+
+}
+
+.h3n{ /*adecue h3 para calificaciones usado en prodcuto1*/
+    font-size: 15px;
+}
+
+.gray{ /*clase para fecha y usuario en producto 1*/
+    color: #9E9E9E;
+    font-weight: lighter;
+}
+
+.flexspace{ /*clase usada para poder justificar el espacio entre componentes, usado en producto1*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.estre{
+    width: 35px;
+    height: 35px;
+}
+
+.Resena
+{
+    text-align: left;
+    font-weight: lighter;
 }
