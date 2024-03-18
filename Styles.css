@@ -210,11 +210,29 @@ nav ul{
     margin-left: 40px;
 }
 
-#botonv{
+.botonv{
+    display: block;
+    text-align: center;
+    height: fit-content;
+    border-radius: 2em;
+    padding: .5em .5em;
+    margin: .5em;
+    color: aliceblue;
+    font-weight: lighter;
+    margin-right: 0;
     margin-left: 10px;
     background-color:#78A55A;
 }
-#botonrosa{
+.botonrosa{
+    display: block;
+    text-align: center;
+    height: fit-content;
+    border-radius: 2em;
+    padding: .5em .5em;
+    margin: .5em;
+    color: aliceblue;
+    font-weight: lighter;
+    margin-right: 0;
     margin-left: 10px;
     background-color:#F5A386;
 }
