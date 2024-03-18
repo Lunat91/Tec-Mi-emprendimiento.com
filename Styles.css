@@ -158,7 +158,11 @@ a{
     height: 120px;
     border-radius: 200px;
 }
-
+.imgopcionespago{
+    width: 90px;
+    height: 90px;
+    border-radius: 15px;
+}
 
 .contenedor{
     display: flex;
