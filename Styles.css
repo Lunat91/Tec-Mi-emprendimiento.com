@@ -82,8 +82,7 @@ Cada columna tiene un tamaño de 12.5%
 /*border: 4px solid #ed0000;  Añade un borde de 1px sólido con color gris claro */
 
 .margenes_carrusel{
-    margin-right: 0%; /* Establece un margen de 20px alrededor del contenedor */
-    margin-left: 20%; /* Establece un margen de 20px alrededor del contenedor */
+    margin: 0%; /* Establece un margen de 0px alrededor del contenedor */
 }
 
 header{
@@ -112,32 +111,12 @@ header{
     align-items: right;
 }
 
-h1,h2,h3,p,a{
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-h1{
-    color: #78A55A;
-    text-align: center;
-}
-
-h2{
-    margin: 0 163px;
-    font-size: 24px;
-    text-align: center;
-
-}
-
-p{
-    text-align: center;
-}
-
 a{
     margin: 0;
     color: black;
     text-decoration: none;
 }
+
 .imgI{
     width: 40px;
     height: 40px;
@@ -210,8 +189,7 @@ nav ul{
     margin: .5em;
     color: aliceblue;
     font-weight: lighter;
-    margin-right: 0;
-    margin-left: 40px;
+    margin: 0;
 }
 
 .botonv{
@@ -223,8 +201,7 @@ nav ul{
     margin: .5em;
     color: aliceblue;
     font-weight: lighter;
-    margin-right: 0;
-    margin-left: 10px;
+    margin: 0;
     background-color:#78A55A;
 }
 .botonrosa{
@@ -236,8 +213,7 @@ nav ul{
     margin: .5em;
     color: aliceblue;
     font-weight: lighter;
-    margin-right: 0;
-    margin-left: 10px;
+    margin: 0;
     background-color:#F5A386;
 }
 
@@ -298,11 +274,10 @@ nav ul li a{
     font-weight: lighter;
 }
 
-#Nombre_p{
+.Nombre_p{
     justify-content: center;
     text-align: left;
     margin-right: 0px;
-    margin-top: 50px;
     margin-left: 10px;
 }
 
@@ -329,30 +304,16 @@ nav ul li a{
     font-size:16px;
 }
 
-.info_empresa{
-    display: flex;
-    margin-top: 20px;
-}
 .perfiltitulo{
     display: flex;
     align-content: center;
     margin-top: 20px;
 }
 
-.Productos{
-    margin-left: 10%;
-    margin-right: 10%;
-
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.Productos .imgp
+.imgp
 {
     width: 163px;
     height: 163px;
-    margin-top: 30px;;
 }
 
 
@@ -462,11 +423,6 @@ button {
     margin-bottom: 5px; /* Espacio entre la imagen y el texto*/
 }
 
-#h2sm{ /*hecho para que el titulo h2 no tenga margenes:) usado el producto 1*/
-    margin-left: 0;
-    margin-right: 0;
-}
-
 #botonAdd /*para que el botón no tenga margenes usado en producto 1*/
 {
     margin-left: 0;
@@ -498,6 +454,13 @@ button {
     justify-content: space-between;
     display: flex;
     flex-direction: column;
+}
+
+.flexspace2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .estre{
@@ -610,4 +573,12 @@ button {
 
 #buttonmenu{
     margin: 10px 0;
+}
+
+.titulov{ /*para titulos color verdes*/
+    color:#78A55A;
+}
+
+.titulor{ /*titulo paras las reseñas*/
+    text-align: left;
 }
