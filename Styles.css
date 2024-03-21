@@ -82,8 +82,7 @@ Cada columna tiene un tamaño de 12.5%
 /*border: 4px solid #ed0000;  Añade un borde de 1px sólido con color gris claro */
 
 .margenes_carrusel{
-    margin-right: 0%; /* Establece un margen de 20px alrededor del contenedor */
-    margin-left: 20%; /* Establece un margen de 20px alrededor del contenedor */
+    margin: 0%; /* Establece un margen de 0px alrededor del contenedor */
 }
 
 header{
@@ -112,32 +111,12 @@ header{
     align-items: right;
 }
 
-h1,h2,h3,p,a{
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-h1{
-    color: #78A55A;
-    text-align: center;
-}
-
-h2{
-    margin: 0 163px;
-    font-size: 24px;
-    text-align: center;
-
-}
-
-p{
-    text-align: center;
-}
-
 a{
     margin: 0;
     color: black;
     text-decoration: none;
 }
+
 .imgI{
     width: 40px;
     height: 40px;
@@ -158,6 +137,7 @@ a{
     height: 120px;
     border-radius: 200px;
 }
+
 .imgopcionespago{
     width: 90px;
     height: 90px;
@@ -168,13 +148,6 @@ a{
     display: flex;
     margin: 10px 0;
     margin-left: 10px;
-}
-
-.contenedor2{
-    display: flex;
-    margin-left: 20%;
-    margin-right: 20%;
-    justify-content:space-around; 
 }
 
 .cambiarColor:active {
@@ -200,44 +173,22 @@ nav ul{
 
 }
 
-.botones{
+.botones, .botonv, .botonrosa{
     display: block;
     background-color: #F6C708;
     text-align: center;
     height: fit-content;
     border-radius: 2em;
     padding: .5em .5em;
-    margin: .5em;
     color: aliceblue;
     font-weight: lighter;
-    margin-right: 0;
-    margin-left: 40px;
+    margin: 0;
 }
 
 .botonv{
-    display: block;
-    text-align: center;
-    height: fit-content;
-    border-radius: 2em;
-    padding: .5em .5em;
-    margin: .5em;
-    color: aliceblue;
-    font-weight: lighter;
-    margin-right: 0;
-    margin-left: 10px;
     background-color:#78A55A;
 }
 .botonrosa{
-    display: block;
-    text-align: center;
-    height: fit-content;
-    border-radius: 2em;
-    padding: .5em .5em;
-    margin: .5em;
-    color: aliceblue;
-    font-weight: lighter;
-    margin-right: 0;
-    margin-left: 10px;
     background-color:#F5A386;
 }
 
@@ -290,7 +241,7 @@ nav ul li a{
     margin: 0 auto; /* Center the image horizontally */
 }
 
-#Nombre_e{
+.Nombre_e{
     justify-content: center;
     text-align: left;
     margin-left: 0px;
@@ -298,15 +249,14 @@ nav ul li a{
     font-weight: lighter;
 }
 
-#Nombre_p{
+.Nombre_p{
     justify-content: center;
     text-align: left;
     margin-right: 0px;
-    margin-top: 50px;
     margin-left: 10px;
 }
 
-#descrip_e{
+.descrip_e{
     text-align: left;
     margin-left: 96px;
     font-weight: lighter;
@@ -314,14 +264,14 @@ nav ul li a{
     font-size:20px ;
 }
 
-#descrip_p{
+.descrip_p{
     text-align: left;
     font-weight: lighter;
     margin: 30px 0 0 10px;
     font-size:20px ;
 }
 
-#redsocial
+.redsocial
 {
     margin-top: 30px;
     text-align: left;
@@ -329,30 +279,16 @@ nav ul li a{
     font-size:16px;
 }
 
-.info_empresa{
-    display: flex;
-    margin-top: 20px;
-}
 .perfiltitulo{
     display: flex;
     align-content: center;
     margin-top: 20px;
 }
 
-.Productos{
-    margin-left: 10%;
-    margin-right: 10%;
-
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.Productos .imgp
+.imgp
 {
     width: 163px;
     height: 163px;
-    margin-top: 30px;;
 }
 
 
@@ -365,7 +301,7 @@ nav ul li a{
     text-align: center;
 }
 
-#imgprod{
+.imgprod{
     width: 248px;
     height: 248px;
     margin-top: 40px ;
@@ -375,12 +311,6 @@ nav ul li a{
     font-weight:bold;
     text-align: left;
     font-size: 24px;
-}
-
-#preciobotones{
-    display: flex;
-    align-items: center;
-    margin-right: 0;
 }
 
 .search-container {
@@ -398,12 +328,13 @@ button {
     cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
 }
 
-#lalal{
+.lalal{
     background-color: #f6c60887;
     width:300px;
     border-radius: 20px;
     padding: none;
-    margin: none
+    margin-bottom: 20px;
+    border: none;
 }
 
 .button-link {
@@ -412,7 +343,7 @@ button {
     margin: 5px;
 }
 
-#buttonmenu{
+.buttonmenu{
     margin: 0;
 }
 
@@ -449,24 +380,6 @@ button {
     
 }
 
-.producto {
-    display: flex;
-    flex-direction: column; /* Columna */
-    align-items: center;
-    margin-bottom: 10px;
-}
-
-.producto img {
-    width: 100px;
-    height: 100px;
-    margin-bottom: 5px; /* Espacio entre la imagen y el texto*/
-}
-
-#h2sm{ /*hecho para que el titulo h2 no tenga margenes:) usado el producto 1*/
-    margin-left: 0;
-    margin-right: 0;
-}
-
 #botonAdd /*para que el botón no tenga margenes usado en producto 1*/
 {
     margin-left: 0;
@@ -498,6 +411,13 @@ button {
     justify-content: space-between;
     display: flex;
     flex-direction: column;
+}
+
+.flexspace2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .estre{
@@ -535,7 +455,7 @@ button {
 }
 
 .modal{
-    position: fixed;
+    position: absolute;
     top: 60px;
     left: 0;
     right: 0;
@@ -603,11 +523,58 @@ button {
      display: flex;
 }
 
-#h2m{
+
+/*Para ventana de cerrar sesión */
+.modal2{
+    position: fixed;
+    top: 340px;
+    left: 120px;
+    right: 0px;
+    bottom: 190px;
+    max-width: 400px;
+    background-color: #77a894;
+    display: none;
+    border-radius: 40px;
+    align-items: center;
+    z-index: 100;
+}
+
+.modal-container2 {
+    height: 90px;
+    width: 300px;
+    min-width: 100px;
+    margin: auto;
+    padding: 3em 3.5rem;
+    place-items: center;
+    grid-auto-columns: 100%;
+    position: fixed;
+    top: 290px;
+    left: 120px;
+}
+
+
+#btn-modal2
+{
+    display: none;
+}
+
+#btn-modal2:checked ~.modal2{
+     display: flex;
+}
+
+.h2m{
     margin: 20px 0;
     text-align: center;
 }
 
 #buttonmenu{
     margin: 10px 0;
+}
+
+.titulov{ /*para titulos color verdes*/
+    color:#78A55A;
+}
+
+.titulor{ /*titulo paras las reseñas*/
+    text-align: left;
 }
