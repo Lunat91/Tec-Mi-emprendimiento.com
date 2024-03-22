@@ -17,7 +17,7 @@ Ya cuenta con el display tipo Flex
     margin-left: 16.66%;  /*2 COLUMNAS*/
     margin-right: 16.66%;  /*2 COLUMNAS*/
     margin-bottom: 10px; /*Espacio Free*/
-    border: 1px solid #ff0000;
+    /* border: 1px solid #ff0000; */
 }
 
 /*
@@ -35,38 +35,38 @@ Cada columna tiene un tamaño de 12.5%
 
 .uno{
     width: 12.5%;
-    background-color: #F6C708;
+    /* background-color: #F6C708; */
 
 }
 .dos{
     width: 25%;
-    background-color: #1cf608;
+    /* background-color: #1cf608; */
 
 }
 .tres{
     width: 37.5%;
-    background-color: #fff700;
+    /* background-color: #fff700; */
 
 }
 .cuatro{
     width: 50%;
-    background-color: #08a7f6;
+    /* background-color: #08a7f6; */
 }
 .cinco{
     width: 62.5%;
-    background-color: #f6a308;
+    /* background-color: #f6a308; */
 }
 .seis{
     width: 75%;
-    background-color: #f760ff;
+    /* background-color: #f760ff; */
 }
 .siete{
     width: 87.5%;
-    background-color: #a946fb;
+    /* background-color: #a946fb; */
 }
 .ocho{
     width: 100%;
-    background-color: #2f5612;
+    /* background-color: #2f5612; */
 }
 
 .espaciovacioprueba{
@@ -193,12 +193,13 @@ nav ul{
 }
 
 ul{
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 16.66%;  /*2 COLUMNAS*/
+    margin-right: 16.66%;  /*2 COLUMNAS*/
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    margin: none
+    margin: none;
 }
 
 #nadademg /*id hecha para la UL de bon¿tones y precios*/
@@ -602,4 +603,9 @@ button {
     margin-bottom: 20px;
     width: 190px; /* Ancho fijo para cada elemento pedido */
     
+}
+.variasopciones_between{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
 }
