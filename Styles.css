@@ -343,7 +343,6 @@ nav ul li a{
     margin-right: 0;
     font-size:20px ;
 }
-
 .descrip_p{
     text-align: left;
     font-weight: lighter;
@@ -381,10 +380,14 @@ nav ul li a{
     text-align: center;
 }
 
-.imgprod{
+.imgprod, .imgenvio{
     width: 248px;
     height: 248px;
     margin-top: 40px ;
+}
+.imgenvio{
+    display: flex;
+    justify-self: flex-start;
 }
 
 .Price{
@@ -675,6 +678,7 @@ button {
    align-self: flex-start;
    margin-top: px;
 }
+
 .pedido {
     display: flex;
     flex-direction: column;

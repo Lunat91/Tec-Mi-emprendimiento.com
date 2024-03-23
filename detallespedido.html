@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi emprendimiento</title>
+    <link rel="stylesheet" href="Styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+</head>
+<body >
+    
+    <header>
+        <div class="encabezado">
+            <div class="alineado_izq">    
+                <a href="INDEX.html">
+                    <img src="Images\Logos\Miemprendimiento.png" alt="menú" class="imgI">
+                </a>
+                <label for="btn-modal1">
+                    <img src="Images/Logos/menu.png" alt="menú" class="imgI">
+                </label>
+                <label for="btn-modaaal">
+                    <img src="Images\Logos\buscar.png" alt="búsqueda" class="imgI"> 
+                </label>
+            </div>
+            <div>
+                <a href="Empresa1Perfil(vistaempresa).html">
+                    <img src="Images\Logos\usuario.png" alt="usuario" class="imgI">
+                </a>
+                <a href="PedidosPendientes.html">
+                    <img src="Images\Logos\carro-de-la-compra.png" alt="carrito" class="imgI">
+                </a>
+            </div class="alineado_der">
+        </div> 
+    </header>
+    
+    <input type="checkbox" id="btn-modaaal"> <!--Ventana de busqueda encima de todo-->
+    <div class="modal">
+        <div class="modal-container">
+            <h2>Búsqueda</h2>
+            <div class="flexspace">
+                <a href="BusquedaEmpresa.html" class="button-link"><button>Por empresa</button></a>
+                <a href="BusquedaProducto.html" class="button-link"><button>Por producto</button></a>
+            </div>
+        </div>
+    </div>
+
+    <input type="checkbox" id="btn-modal1"> <!--Ventana de busqueda encima de todo-->
+    <div class="modal1">
+        <div class="modal-container1">
+            <h2 class="h2m">Menú</h2>
+            <div class="flexspace1">
+                <a href="BusquedaVentana.html" class="button-link buttonmenu"><button class="lalal">Búsqueda</button></a>
+                <a href="EditarPerfil.html" class="button-link buttonmenu"><button class="lalal">Editar mi perfil</button></a>
+                <!--<label for="btn-modal2"> Cerrar Sesión</label>-->
+                <a href="EditarPerfil.html" class="button-link buttonmenu"><button class="lalal">Cerrar sesión</button></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Ventana de cerrar sesión encima de todo falta saber como se cierra
+    <input type="checkbox" id="btn-modal2"> 
+    <div class="modal2">
+        <div class="modal-container2">
+            <h2>¿Está seguro de querer cerrar sesión?</h2>
+            <div class="flexspace">
+                <button>Cancelar</button>
+                <button>Continuar</button>
+            </div>
+        </div>
+    </div>
+    -->
+
+    <div class="margenes_generales">
+        <div class="uno"></div>
+        <div class="seis"> <h2>Detalles del envío</h2></div>
+        <div class="uno"></div>  <!--Título-->
+        
+        <div class="ocho"> 
+            <p class="descrip_p">
+                Pedido para: Juan Mateo Ruiz López
+            </p>
+            <p class="descrip_p">
+                Dirección: Calle 222 17 - 83 Apto 777 Torre 5<br>
+            </p>
+            <p class="descrip_p">
+             Contacto: 3007865430
+            </p>
+        </div>
+        
+        <div class="cuatro">
+            <img class="imgenvio" src="Images\Productos Rótelo\spider-cat.png" alt="Spider-cat">
+        </div>
+        <div class="cuatro">
+            <h2 class="Nombre_p">Spider - Cat</h2>
+            <p class="descrip_p">Dimensiones: 5.4 cm x 4.5 cm<br> X2 unidades <br>$4000 COP </p>
+        </div>
+
+        <div class="cuatro">
+            <img class="imgenvio" src="Images\Productos Rótelo\perry.png" alt="Perry?" >
+        </div>
+        <div class="cuatro">
+            <h2 class="Nombre_p">Perry?</h2>
+            <p class="descrip_p">Dimensiones: 5.4 cm x 4.5 cm<br> X1 unidades <br>$2000 COP </p>
+        </div>
+
+        <div class="cuatro">
+            <img class="imgenvio" src="Images/Productos Rótelo/gato triste.png" alt="GatoTite">
+        </div>
+        <div class="cuatro">
+            <h2 class="Nombre_p">Gato tite</h2>
+            <p class="descrip_p">Dimensiones: 5.4 cm x 4.5 cm<br> X5 unidades <br>$10000 COP </p>
+        </div>
+
+        <div class="dos">
+            <div class="botonaz">Total recibido: 16000 COP</div>
+        </div>
+
+        <div class="dos">
+            <div class="botonv"> Pedido enviado</div>
+        </div>
+
+        <div class="dos">
+            <div class="botonrosa"> Cancelar pedido</div>
+        </div>
+ 
+      
+  
+    </div> <!-- fin margenes generales-->
+
+    <footer class="pie">
+        <center> <img src="Images/Logos/Re-brand logo final.png" alt="Moon Desing" class="img2"> </center>
+        <nav>
+            <ul>
+                <li><a href="INDEX.html">Home</a></li>
+                <li><a href="Busqueda.html">Búsqueda</a></li>
+                <li><a href="PedidosPendientes.html">Pedidos pendientes</a></li>
+                <li><a href="Empresa1Perfil(vistaempresa).html">Usuario</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+</body>
+</html>
