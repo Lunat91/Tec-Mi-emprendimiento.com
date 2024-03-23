@@ -126,7 +126,7 @@ Cada columna tiene un tamaño de 12.5%
 }
 .cinco{
     width: 62.5%;
-    /* background-color: #f6a308; */
+    /*background-color: #f6a308; */
 }
 .seis{
     width: 75%;
@@ -195,6 +195,12 @@ a{
     margin-right: 10px;
     margin-left: 10px;
 }
+#imgGoogle{
+    width: 25;
+    height: 25px;
+    margin-right: 10px;
+}
+
 
 
 .img1{
@@ -222,9 +228,6 @@ a{
     margin-left: 10px;
 }
 
-.cambiarColor:active {
-    background-color: #D8D4D4; /* Cambia el color de fondo al hacer clic */
-}
 
 .carrusel{
     width:auto;
@@ -245,7 +248,7 @@ nav ul{
 
 }
 
-.botones, .botonv, .botonrosa{
+.botones, .botonv, .botonrosa, .botonaz{
     display: block;
     background-color: #F6C708;
     text-align: center;
@@ -255,6 +258,14 @@ nav ul{
     color: aliceblue;
     font-weight: lighter;
     margin: 0;
+}
+.botonaz {
+    text-decoration: none;
+    background-color: #5B65A6;
+    border: none;
+    cursor: pointer;
+    margin: 5px;
+    
 }
 
 .botonv{
@@ -352,16 +363,16 @@ nav ul li a{
     font-size:16px;
 }
 
-.perfiltitulo{
-    display: flex;
-    align-content: center;
-    margin-top: 20px;
-}
-
 .imgp
 {
     width: 163px;
     height: 163px;
+}
+.logoinicio
+{
+    width: 200px;
+    height: 200px;
+    align-self: center;
 }
 
 
@@ -400,7 +411,11 @@ button {
     border-radius: 5px; /* Añade borde redondeado */
     cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
 }
-
+#iniciarsesiongoogle{
+    display: flex;
+    border-radius: 2em;
+    justify-content: center;
+}
 .lalal{
     background-color: #f6c60887;
     width:300px;
@@ -653,20 +668,16 @@ button {
     text-align: left;
 }
 
-.detalle-envio {
-    font-weight: bold;
-    text-decoration: none;
-    background-color: #5B65A6;
-    color: white;
-    padding: 8px 16px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+.linkv{
+    color:#78A55A;
+    text-decoration: underline;
     
 }
-
-.detalle-envio:hover {
-    background-color: #434e90;
+#linksmall{
+   display: flex;
+   font-size: 10px;
+   align-self: flex-start;
+   margin-top: px;
 }
 .pedido {
     display: flex;
@@ -681,3 +692,51 @@ button {
     flex-wrap: wrap;
     justify-content:space-around;
 }
+
+/* Estilos para el formulario de inicio de sesión y columnas */
+.column-form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: space-around;
+    
+}
+
+/* Estilos para los enlaces de inicio de sesión social */
+.social-login {
+    display: flex;
+    height: 10px;
+    flex-wrap: wrap;
+    background-color: #CAD8BF;
+    justify-content: flex-start;
+    margin-top: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px #A6B49B;
+    color:#7a8174c6;
+
+}
+
+
+/*ANIMACIONES*/
+.botonaz:hover {
+    background-color: #434e90;
+}
+.botonv:hover {
+    background-color: #567740;
+}
+.botonrosa:hover {
+    background-color: #DD9278;
+}
+.cambiarColor:active {
+    background-color: #D8D4D4; /* Cambia el color de fondo al hacer clic*/
+}
+#iniciarsesiongoogle:hover{
+    background-color: #D6D9D4;
+}
+
+
+.material-symbols-outlined:hover { /*modificaciones icono editar*/
+    cursor: pointer; 
+}
+
