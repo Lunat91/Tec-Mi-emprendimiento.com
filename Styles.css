@@ -122,7 +122,7 @@ Cada columna tiene un tamaño de 12.5%
 }
 .cuatro{
     width: 50%;
-    /* background-color: #08a7f6; */
+    /*background-color: #08a7f6;*/
 }
 .cinco{
     width: 62.5%;
@@ -260,12 +260,8 @@ nav ul{
     margin: 0;
 }
 .botonaz {
-    text-decoration: none;
     background-color: #5B65A6;
-    border: none;
-    cursor: pointer;
     margin: 5px;
-    
 }
 
 .botonv{
