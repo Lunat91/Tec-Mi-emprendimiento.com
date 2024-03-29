@@ -175,6 +175,17 @@ header{
     margin: none
 }
 
+.encabezado .alineado_izq :hover{
+    transform: scale(1.3);
+    transition: ease-in-out;
+}
+
+.encabezado .alineado_der :hover{
+    transform: scale(1.3);
+    transition: ease-in-out;
+}
+
+
 .alineado_der{
     align-items: right;
 }
@@ -197,8 +208,6 @@ a{
     height: 25px;
     margin-right: 10px;
 }
-
-
 
 .img1{
     width: 160px;
