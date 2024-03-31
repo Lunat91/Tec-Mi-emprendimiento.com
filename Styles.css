@@ -162,7 +162,6 @@ header{
     display: relative;
     position: fixed;
     width: 100%;
-
 }
 
 .encabezado {
@@ -175,7 +174,7 @@ header{
     margin: none;
 }
 
-.alineado_izq .imgI, .alineado_der .imgI:hover {
+.alineado_izq .imgI, .alineado_der .imgI {
     transition: transform 0.5s ease-in-out;
 }
 
@@ -605,67 +604,64 @@ button {
     background-color: rgb(186, 186, 186);
 }
 
-.modal{
+.modal {
     position: absolute;
-    top: 60px;
+    top: 80px;
     left: 0;
     right: 0;
-    bottom: 440px;
-    background-color: #CAD8BF;
-    display: none;
+    background-color: #EEFFE0;
+    overflow: hidden;
+    display: flex;
     border-bottom-left-radius: 40px;
     border-bottom-right-radius: 40px;
     align-items: center;
     z-index: 100;
-    box-shadow: 0 2px 10px #5d6458;
+    opacity: 0%;
+    transition: opacity  0.3s ease-in-out;
+    height: 200px;
 }
 
 .modal-container {
-    height: 90px;
     margin: auto;
-    padding: 3em 3.5rem;
     place-items: center;
     grid-auto-columns: 100%;
+    text-align: center;
 }
 
-#btn-modaaal
-{
+#btn-modaaal {
     display: none;
 }
 
-#btn-modaaal:checked ~.modal{
-     display: flex;
+#btn-modaaal:checked ~ .modal {
+    display: flex;
+    transition: opacity  0.3s ease-in-out;
+    height: 200px;
+    opacity: 100%;
 }
 
+
 .modal1{
-    position: fixed;
-    top: 60px;
-    left: 0;
-    right: 50px;
-    bottom: 450px;
+    position: absolute;
+    top: 80px;
+    width: 400px;
+    height: 400px;
     max-width: 600px;
     max-height: 1400px;
     background-color: #EEFFE0;
-    display: none;
+    display: flex;
+    align-items: center;
     border-bottom-left-radius: 40px;
     border-bottom-right-radius: 40px;
     align-items: center;
     z-index: 100;
-    box-shadow: 0 2px 10px #A6B49B;
+    opacity: 0%;
+    transition: opacity  0.3s ease-in-out;
 }
 .modal-container1 {
-    height: 90px;
-    width: 300px;
-    min-width: 100px;
     margin: auto;
-    padding: 3em 3.5rem;
     place-items: center;
     grid-auto-columns: 100%;
-    position: fixed;
-    top: 80px;
-    left: 0px;
 }
-
 
 #btn-modal1
 {
@@ -674,6 +670,8 @@ button {
 
 #btn-modal1:checked ~.modal1{
      display: flex;
+     transition: opacity  0.3s ease-in-out;
+     opacity: 100%;
 }
 
 

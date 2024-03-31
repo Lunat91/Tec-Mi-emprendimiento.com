@@ -14,16 +14,40 @@
 <body>
     <header>
         <div class="encabezado">
-            <div class="alineado_izq">    
+            <div class="alineado_izq">   
+                <!--HOME--> 
                 <a href="index.html">
                     <img src="Images\Logos\Miemprendimiento.png" alt="menú" class="imgI">
                 </a>
+                <!--MENU-->
                 <label for="btn-modal1">
                     <img src="Images/Logos/menu.png" alt="menú" class="imgI">
                 </label>
+                <input type="checkbox" id="btn-modal1"> <!--Ventana de busqueda encima de todo-->
+                <div class="modal1">
+                    <div class="modal-container1">
+                        <h2 class="h2m">Menú</h2>
+                        <div class="flexspace1">
+                            <a href="EditarPerfil.html" class="button-link buttonmenu"><button class="lalal">Editar mi perfil</button></a>
+                            <!--<label for="btn-modal2"> Cerrar Sesión</label>-->
+                            <a href="EditarPerfil.html" class="button-link buttonmenu"><button class="lalal">Cerrar sesión</button></a>
+                        </div>
+                    </div>
+                </div>
+                <!--BUSQUEDA-->
                 <label for="btn-modaaal">
                     <img src="Images\Logos\buscar.png" alt="búsqueda" class="imgI"> 
                 </label>
+                <input type="checkbox" id="btn-modaaal"> <!--Ventana de busqueda encima de todo-->
+                <div class="modal">
+                    <div class="modal-container">
+                        <h2>Búsqueda</h2>
+                        <div class="flexspace">
+                            <a href="BusquedaEmpresa.html" class="button-link"><button>Por empresa</button></a>
+                            <a href="BusquedaProducto.html" class="button-link"><button>Por producto</button></a>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="alineado_der">
                 <a href="Usuario.html">
@@ -35,30 +59,6 @@
             </div>
         </div> 
     </header>
-
-    <input type="checkbox" id="btn-modaaal"> <!--Ventana de busqueda encima de todo-->
-    <div class="modal">
-        <div class="modal-container">
-            <h2>Búsqueda</h2>
-            <div class="flexspace">
-                <a href="BusquedaEmpresa.html" class="button-link"><button>Por empresa</button></a>
-                <a href="BusquedaProducto.html" class="button-link"><button>Por producto</button></a>
-            </div>
-        </div>
-    </div>
-
-    <input type="checkbox" id="btn-modal1"> <!--Ventana de busqueda encima de todo-->
-    <div class="modal1">
-        <div class="modal-container1">
-            <h2 class="h2m">Menú</h2>
-            <div class="flexspace1">
-                <a href="BusquedaVentana.html" class="button-link buttonmenu"><button class="lalal">Búsqueda</button></a>
-                <a href="EditarPerfil.html" class="button-link buttonmenu"><button class="lalal">Editar mi perfil</button></a>
-                <!--<label for="btn-modal2"> Cerrar Sesión</label>-->
-                <a href="EditarPerfil.html" class="button-link buttonmenu"><button class="lalal">Cerrar sesión</button></a>
-            </div>
-        </div>
-    </div>
 
     <!--Ventana de cerrar sesión encima de todo falta saber como se cierra
     <input type="checkbox" id="btn-modal2"> 
