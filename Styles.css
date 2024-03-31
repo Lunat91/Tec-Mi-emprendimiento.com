@@ -639,12 +639,11 @@ button {
     opacity: 100%;
 }
 
-
 .modal1{
     position: absolute;
     top: 80px;
     width: 400px;
-    height: 400px;
+    height: 220px;
     max-width: 600px;
     max-height: 1400px;
     background-color: #EEFFE0;
@@ -657,6 +656,7 @@ button {
     opacity: 0%;
     transition: opacity  0.3s ease-in-out;
 }
+
 .modal-container1 {
     margin: auto;
     place-items: center;
@@ -667,7 +667,7 @@ button {
 {
     display: none;
 }
-
+ 
 #btn-modal1:checked ~.modal1{
      display: flex;
      transition: opacity  0.3s ease-in-out;
