@@ -59,7 +59,7 @@
     
 }
 
-@media only screen and (min-width: 1441px) and (max-width: 2560px){
+@media only screen and (min-width: 1921px) and (max-width: 2560px){
     h1{font-size: 50px;}
     html{font-size: 25px;}
     .carousel-container a img, .carrusel .img { 
@@ -112,6 +112,15 @@
     .descrip_p, .gray, .Resena, .Price{
         font-size: 35px;
     }
+}
+
+@media only screen and (min-width: 1441px) and (max-width: 1920px){
+
+    .imgp{
+        width: 240px;
+        height: 240px;
+    }
+
 }
 
 @media only screen and (min-width: 1025px) and (max-width: 1440px){
@@ -170,6 +179,14 @@
     }
     .modal1{
         top: 60px;
+    }
+    .Nombre_p{
+        font-size: 30px;
+        margin-left: 25px;
+    }
+    .descrip_p{
+        font-size: 20px;
+        margin-left: 25px;
     }
 }
 
