@@ -119,6 +119,8 @@
     .imgp{
         width: 240px;
         height: 240px;
+        max-width: 260px;
+        max-width: 260px;
     }
 
 }
