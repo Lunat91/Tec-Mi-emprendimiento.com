@@ -627,6 +627,7 @@ button {
     transition: opacity  0.3s ease-in-out;
     height: 200px;
     pointer-events: none; /* Desactiva la interactividad por defecto */
+    box-shadow: 5px 5px 10px #A6B49B;
 
 }
 
@@ -658,14 +659,14 @@ button {
     max-height: 1400px;
     background-color: #EEFFE0;
     display: flex;
-    align-items: center;
     border-bottom-left-radius: 40px;
     border-bottom-right-radius: 40px;
     align-items: center;
-    z-index: 101;
+    z-index: 100;
     opacity: 0%;
     transition: opacity  0.3s ease-in-out;
     pointer-events: none; /* Desactiva la interactividad por defecto */
+    box-shadow: 5px 5px 10px #A6B49B;
 
 }
 
@@ -692,31 +693,28 @@ button {
 /*Para ventana de cerrar sesión */
 .modal2{
     position: fixed;
-    top: 340px;
-    left: 120px;
-    right: 0px;
-    bottom: 190px;
-    max-width: 400px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 220px;
+    max-width: 600px;
+    max-height: 1400px;
     background-color: #77a894;
     display: none;
+    align-items: center;
     border-radius: 40px;
     align-items: center;
-    z-index: 100;
+    z-index: 101;
     pointer-events: none; /* Desactiva la interactividad por defecto */
+    box-shadow: 5px 5px 10px #A6B49B;
 
 }
 
 .modal-container2 {
-    height: 90px;
-    width: 300px;
-    min-width: 100px;
-    margin: auto;
-    padding: 3em 3.5rem;
+    margin: 20px;
     place-items: center;
     grid-auto-columns: 100%;
-    position: fixed;
-    top: 290px;
-    left: 120px;
 }
 
 

@@ -1,19 +1,15 @@
 @media only screen and (min-width: 2561px){
     h1{font-size: 61px;}
     html{font-size: 30px;}
-    .carousel-container a img, .carrusel .img { 
-        width: 400px;
-        height: 400px;
+    .carousel-container a img, .carrusel .img, .img1 { 
+        width: 300px;
+        height: 300px;
     }
     .modal{
         top: 100px;
     }
     .modal1{
         top: 100px;
-    }
-    .img1{
-        width: 400px;
-        height: 400px;
     }
     .cien{
         width: auto;
