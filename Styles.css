@@ -89,6 +89,7 @@ Ya cuenta con el display tipo Flex
     margin-left: 16.66%;  /*2 COLUMNAS*/
     margin-right: 16.66%;  /*2 COLUMNAS*/
     margin-bottom: 10px; /*Espacio Free*/
+
     /* border: 1px solid #ff0000; */
 }
 
@@ -352,13 +353,19 @@ nav ul li a{
 }
 
 .pie {
-    width: auto;
+    width: 100%;
     margin-top: 30px;
     padding-top: 10px;
     padding-bottom: 20px;
     height: fit-content;
     background: #EEFFE0;
     text-align: center; 
+}
+.fin{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }
 
 .pie img {
@@ -619,6 +626,8 @@ button {
     opacity: 0%;
     transition: opacity  0.3s ease-in-out;
     height: 200px;
+    pointer-events: none; /* Desactiva la interactividad por defecto */
+
 }
 
 .modal-container {
@@ -637,6 +646,7 @@ button {
     transition: opacity  0.3s ease-in-out;
     height: 200px;
     opacity: 100%;
+    pointer-events: auto; /* Restablece la interactividad cuando la modal está visible */
 }
 
 .modal1{
@@ -652,9 +662,11 @@ button {
     border-bottom-left-radius: 40px;
     border-bottom-right-radius: 40px;
     align-items: center;
-    z-index: 100;
+    z-index: 101;
     opacity: 0%;
     transition: opacity  0.3s ease-in-out;
+    pointer-events: none; /* Desactiva la interactividad por defecto */
+
 }
 
 .modal-container1 {
@@ -672,6 +684,8 @@ button {
      display: flex;
      transition: opacity  0.3s ease-in-out;
      opacity: 100%;
+     pointer-events: auto; /* Restablece la interactividad cuando la modal está visible */
+
 }
 
 
@@ -688,6 +702,8 @@ button {
     border-radius: 40px;
     align-items: center;
     z-index: 100;
+    pointer-events: none; /* Desactiva la interactividad por defecto */
+
 }
 
 .modal-container2 {
@@ -783,9 +799,11 @@ button {
     background-color: #CAD8BF;
     justify-content: flex-start;
     margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-left: 10px;
+    padding-left: 5px;
     border-radius: 10px;
     box-shadow: 0 2px 4px #A6B49B;
     color:#9E9E9E;
