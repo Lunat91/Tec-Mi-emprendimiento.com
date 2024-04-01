@@ -248,16 +248,20 @@ a{
     overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
+    position: relative;
 }
 
 .carrusel .img{
     width: 163px;
     height: 163px;
+    position: relative; /* Añade posición relativa para establecer el contexto de apilamiento */
+    z-index: 1;
 }
 
 .carrusel .img:hover{
     transform: scale(1.1);
-
+    z-index: 2;
+    
 }
 
 /*------------------------------------------------------------------ PRUEBA*/
@@ -480,6 +484,18 @@ button {
     margin-bottom: 20px;
     border: none;
 }
+.cerrar_sesion{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #f6c60887;
+    width: 300px;
+    height: 35px;
+    border-radius: 20px;
+}
 
 .button-link {
     text-decoration: none;
@@ -690,25 +706,24 @@ button {
 }
 
 
-/*Para ventana de cerrar sesión */
-.modal2{
+.modal2 {
     position: fixed;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -90%);
     width: 400px;
     height: 220px;
     max-width: 600px;
     max-height: 1400px;
     background-color: #77a894;
-    display: none;
+    display: flex;
     align-items: center;
     border-radius: 40px;
     align-items: center;
-    z-index: 101;
     pointer-events: none; /* Desactiva la interactividad por defecto */
     box-shadow: 5px 5px 10px #A6B49B;
-
+    opacity: 0%; /* Establece la opacidad inicial */
+    transition: opacity 0.3s ease; /* Agrega una transición de opacidad */
 }
 
 .modal-container2 {
@@ -717,15 +732,15 @@ button {
     grid-auto-columns: 100%;
 }
 
-
-#btn-modal2
-{
+#btn-modal2 {
     display: none;
 }
 
-#btn-modal2:checked ~.modal2{
-     display: flex;
+#btn-modal2:checked ~ .modal2 {
+    display: flex;
+    opacity: 100%; /* Cambia la opacidad cuando el modal está activo */
 }
+
 
 .h2m{
     margin: 20px 0;
