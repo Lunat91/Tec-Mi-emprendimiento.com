@@ -165,7 +165,7 @@ header{
     width: 100%;
 }
 
-.encabezado {
+.encabezado, .encabezadorosa, .encabezadoaz{
     width:auto;
     height: 60px;
     background: #EEFFE0;
@@ -173,6 +173,12 @@ header{
     justify-content: space-between;
     align-items: center;
     margin: none;
+}
+.encabezadorosa{
+    background: #FAD0C1;
+}
+.encabezadoaz{
+    background: #BFC7D8;
 }
 
 .alineado_izq .imgI, .alineado_der .imgI {
@@ -312,6 +318,9 @@ nav ul{
 .botonaz {
     background-color: #5B65A6;
     margin: 5px;
+}
+#botontotal:hover{
+    background-color: #5B65A6;
 }
 
 .botonv{
