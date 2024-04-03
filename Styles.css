@@ -518,7 +518,7 @@ button {
 }
 
 .card {
-    position: relative;
+
     display: flex;
     margin-top: 20px;
     margin-left: 150px;
