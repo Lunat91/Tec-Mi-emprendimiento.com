@@ -115,7 +115,15 @@
 }
 
 @media only screen and (min-width: 1441px) and (max-width: 1920px){
-
+    .encabezado{
+        height: 80px;
+    }
+    .modal{
+        top: 80px;
+    }
+    .modal1{
+        top: 80px;
+    }
     .imgp{
         width: 240px;
         height: 240px;
@@ -125,11 +133,17 @@
 
 }
 
-@media only screen and (min-width: 1025px) and (max-width: 1440px){
+@media only screen and (min-width: 1025px) and (max-width: 1920px){
     h1{font-size: 50px;}
     html{font-size: 25px;}
     .encabezado{
         height: 80px;
+    }
+    .modal{
+        top: 80px;
+    }
+    .modal1{
+        top: 80px;
     }
     .img1{
         width: 200px;
