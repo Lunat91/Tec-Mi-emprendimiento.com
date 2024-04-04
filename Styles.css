@@ -165,7 +165,7 @@ header{
     width: 100%;
 }
 
-.encabezado {
+.encabezado, .encabezadorosa, .encabezadoaz{
     width:auto;
     height: 60px;
     background: #EEFFE0;
@@ -173,6 +173,12 @@ header{
     justify-content: space-between;
     align-items: center;
     margin: none;
+}
+.encabezadorosa{
+    background: #FAD0C1;
+}
+.encabezadoaz{
+    background: #BFC7D8;
 }
 
 .alineado_izq .imgI, .alineado_der .imgI {
@@ -356,7 +362,7 @@ nav ul li a{
     width: 95px;
 }
 
-.pie {
+.pie,.pier, .pieaz {
     width: 100%;
     margin-top: 30px;
     padding-top: 10px;
@@ -364,6 +370,12 @@ nav ul li a{
     height: fit-content;
     background: #EEFFE0;
     text-align: center; 
+}
+.pier{
+    background: #FAD0C1;
+}
+.pieaz{
+    background: #BFC7D8;
 }
 .fin{
     position: fixed;
