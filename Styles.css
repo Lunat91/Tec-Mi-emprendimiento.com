@@ -221,6 +221,11 @@ a{
     margin-right: 10px;
 }
 
+.imgMD{
+    width: 100px;
+    align-items: center;
+}
+
 .imgperfil{
     width: 100%;
     height: auto;
@@ -373,7 +378,7 @@ nav ul li a{
     padding-bottom: 20px;
     height: fit-content;
     background: #EEFFE0;
-    text-align: center; 
+    text-align: center;
 }
 .pier{
     background: #FAD0C1;
@@ -435,6 +440,13 @@ nav ul li a{
     height: 163px;
 }
 .logoinicio
+{
+    width: 200px;
+    height: 200px;
+    align-self: center;
+}
+
+.logoinicio_moon_desing
 {
     width: 200px;
     height: 200px;

@@ -85,6 +85,10 @@
     .img2{
         width: 250px;
     }
+    .imgMD{
+        width: 100px;
+        align-items: center;
+    }
     .descrip_e{
         font-size: 30px;
         margin-left: 300px;
@@ -155,6 +159,10 @@
     }
     .img2{
         width: 250px;
+    }
+    .imgMD{
+        width: 100px;
+        align-items: center;
     }
     .descrip_e{
         font-size: 20px;
