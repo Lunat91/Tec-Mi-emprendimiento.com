@@ -994,3 +994,8 @@ button {
     background-color:#9bbaffd5;
     box-shadow: 0px 0px 10px 5px  #6a81b5;
 }
+
+.cuadrogris{
+    background-color: #9E9E9E;
+    box-shadow:  0px 0px 10px 5px #363636;
+}
