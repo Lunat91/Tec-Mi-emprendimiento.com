@@ -226,13 +226,15 @@ a{
     height: auto;
     aspect-ratio: 1/1;
     border-radius: 200px;
-    max-width: 250px;
+    max-width: 170px;
 }
 
 .imgopcionespago{
-    width: 90px;
-    height: 90px;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1/1;
     border-radius: 15px;
+    max-width: 120px;
 }
 
 .contenedor{
