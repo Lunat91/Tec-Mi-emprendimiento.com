@@ -16,19 +16,19 @@
   font-style: normal;
 }
 
-.kodchasan-medium {
+.kodchasan-medium, .transparente, .cambiarColor{
   font-family: "Kodchasan", sans-serif;
   font-weight: 500;
   font-style: normal;
 }
 
-.kodchasan-semibold {
+.kodchasan-semibold{
   font-family: "Kodchasan", sans-serif;
   font-weight: 600;
   font-style: normal;
 }
 
-.kodchasan-bold {
+.kodchasan-bold{
   font-family: "Kodchasan", sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -967,7 +967,11 @@ button {
     color:#5B65A6;
     text-align: left;
 }
-
+.transparente{
+    background-color: transparent;
+    color:#9E9E9E;
+    font-size: medium;
+}
 .rosao{
     text-decoration: underline;
     color:#F5A386
