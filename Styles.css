@@ -457,10 +457,15 @@ nav ul li a{
     font-size:16px;
 }
 
-.imgp
+.imgp, .imgpp
 {
     width: 163px;
     height: 163px;
+}
+
+.imgpp
+{
+    padding: 10px;
 }
 .logoinicio
 {
@@ -956,6 +961,11 @@ button {
 .morao{
     color:#5B65A6;
     text-decoration: underline;
+}
+
+.morado{
+    color:#5B65A6;
+    text-align: left;
 }
 
 .rosao{
