@@ -326,6 +326,9 @@ nav ul{
     background-color: #5B65A6;
     margin: 5px;
 }
+#botontotal:hover{
+    background-color: #5B65A6;
+}
 #modprod{
     padding: .5em 50px;
 }
@@ -622,6 +625,7 @@ button {
     flex-wrap: wrap;
 }
 
+
 .estre{
     width: 35px;
     height: 35px;
@@ -677,6 +681,35 @@ button {
 
 }
 
+.cambios {
+    position: fixed;
+    align-self: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #D9D9D9;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    padding: 40px;
+    align-items: center;
+    z-index: 100;
+    opacity: 0%;
+    transition: opacity  0.3s ease-in-out;
+    pointer-events: none; /* Desactiva la interactividad por defecto */
+    box-shadow: 5px 5px 10px #A6B49B;
+    
+
+}
+.cambios-container {
+    margin: auto;
+    place-items: center;
+    grid-auto-columns: 100%;
+    text-align: center;
+}
+
+
 .modal-container {
     margin: auto;
     place-items: center;
@@ -684,10 +717,20 @@ button {
     text-align: center;
 }
 
+
 #btn-modaaal {
     display: none;
 }
+#btn-cambios{
+    display: none;
+}
 
+#btn-cambios:checked ~ .cambios {
+    display: flex;
+    transition: opacity  0.3s ease-in-out;
+    opacity: 100%;
+    pointer-events: auto; /* Restablece la interactividad cuando la modal está visible */
+}
 #btn-modaaal:checked ~ .modal {
     display: flex;
     transition: opacity  0.3s ease-in-out;
@@ -726,7 +769,7 @@ button {
 {
     display: none;
 }
- 
+
 #btn-modal1:checked ~.modal1{
      display: flex;
      transition: opacity  0.3s ease-in-out;
