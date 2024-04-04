@@ -219,6 +219,7 @@ a{
     height: 160px;
     border-radius: 200px;
     margin-right: 10px;
+    transition: transform 0.5s ease-in-out;
 }
 
 .imgMD{
@@ -271,12 +272,12 @@ a{
     z-index: 1;
 }
 
-.img1:hover,  .imgprod:hover{
+.img1:hover{
     transform: rotateY(360deg) scale(1.1); /* Gira horizontalmente y escala la imagen al pasar el mouse */
     z-index: 2;
 }
 
-.carrusel .img:hover, .prod:hover{
+.carrusel .img:hover, .prod:hover,   .imgprod:hover {
     transform: scale(1.1);
     z-index: 2;
 }
@@ -461,6 +462,7 @@ nav ul li a{
 {
     width: 163px;
     height: 163px;
+    transition: transform 0.5s ease-in-out;
 }
 
 .imgpp
@@ -498,6 +500,7 @@ nav ul li a{
     height: auto;
     aspect-ratio: 1/1;
     margin-top: 40px ;
+    transition: transform 0.5s ease-in-out;
 }
 .imgenvio{
     display: flex;
