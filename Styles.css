@@ -271,10 +271,25 @@ a{
     z-index: 1;
 }
 
-.carrusel .img:hover{
+.img1:hover,  .imgprod:hover{
+    transform: rotateY(360deg) scale(1.1); /* Gira horizontalmente y escala la imagen al pasar el mouse */
+    z-index: 2;
+}
+
+.carrusel .img:hover, .prod:hover{
     transform: scale(1.1);
     z-index: 2;
-    
+}
+
+.prod{
+    transition: transform 0.5s ease, z-index 0s 0.5s;
+}
+
+.prod:hover{
+    background-color:#CAD8BF;
+    box-shadow:   0px 0px 10px 5px #A6B49B;
+    transform: rotateY(360deg) scale(1.1); /* Gira horizontalmente y escala la imagen al pasar el mouse */
+    z-index: 2;
 }
 
 /*------------------------------------------------------------------ PRUEBA*/
@@ -422,11 +437,16 @@ nav ul li a{
     margin-right: 0;
     font-size:20px ;
 }
+
 .descrip_p{
     text-align: left;
-    font-weight: lighter;
+    font-weight: 200;
     margin: 30px 0 0 10px;
-    font-size:20px ;
+    font-size:20px;
+}
+.semibold{
+    font-weight: 500;
+    color:#78A55A;
 }
 
 .redsocial
@@ -933,3 +953,27 @@ button {
     cursor: pointer; 
 }
 
+.morao{
+    color:#5B65A6;
+    text-decoration: underline;
+}
+
+.rosao{
+    text-decoration: underline;
+    color:#F5A386
+}
+
+.verde{
+    text-decoration: underline;
+    color:#78A55A
+}
+
+.rosao1:hover{
+    background-color:#f9c6b4dd;
+    box-shadow: 0px 0px 10px 5px  #DD9278;
+}
+
+.morao1:hover{
+    background-color:#9bbaffd5;
+    box-shadow: 0px 0px 10px 5px  #6a81b5;
+}
