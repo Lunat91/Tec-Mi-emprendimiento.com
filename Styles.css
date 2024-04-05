@@ -661,6 +661,11 @@ button {
     flex-wrap: wrap;
 }
 
+#sinspacebet{
+    justify-content: start;
+    margin-right: 50px;
+}
+
 
 .estre{
     width: 35px;
