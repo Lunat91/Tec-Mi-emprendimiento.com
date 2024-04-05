@@ -459,9 +459,20 @@ nav ul li a{
     margin: 30px 0 0 10px;
     font-size:20px;
 }
-.semibold{
+.semibold, .semibold_morado{
     font-weight: 500;
     color:#78A55A;
+}
+
+.semibold_morado{
+    color:#6a81b5;
+}
+
+.cuadradomorado:hover{
+    background-color: #99a5e9;
+    box-shadow: 0px 0px 10px 5px  #c4c5ca;
+    border-radius: .8em;
+    padding: 2%;
 }
 
 .redsocial
