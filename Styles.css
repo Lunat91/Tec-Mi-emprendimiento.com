@@ -695,7 +695,11 @@ button {
 .circle_first{
     background-color: #78A55A;
 }
-  
+
+.margen_derecha{
+    margin-right: 8%;
+}
+
 .line {
     margin-left: 25px;
     width: 2px;
