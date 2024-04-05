@@ -16,7 +16,7 @@
   font-style: normal;
 }
 
-.kodchasan-medium, .transparente, .cambiarColor{
+.kodchasan-medium, .transparente,.transparente_negro, .cambiarColor{
   font-family: "Kodchasan", sans-serif;
   font-weight: 500;
   font-style: normal;
@@ -982,6 +982,12 @@ button {
     color:#9E9E9E;
     font-size: medium;
 }
+.transparente_negro{
+    background-color: transparent;
+    color: #000000;
+    font-size: medium;
+}
+
 .rosao{
     text-decoration: underline;
     color:#F5A386
@@ -1021,6 +1027,17 @@ textarea {
     outline: none; /* Quita el contorno al enfocar */
 }
 
+.texto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.7); /* Fondo semitransparente */
+    padding: 10px;
+    border-radius: 5px; /* Inicialmente oculta el texto */
+  
+}
+
 .agrupador{
     border:solid;
     border-radius: 1em;
@@ -1029,4 +1046,19 @@ textarea {
     margin: .5%;
     justify-content: center;
     width: 48%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.agrupador:hover{
+    transform: scale(1.05);
+}
+
+.cuadro{
+    background-color:#BFC7D8;
+    border-radius: 1em;
+}
+
+input{
+    border: none;
+    width: 100%;
 }
