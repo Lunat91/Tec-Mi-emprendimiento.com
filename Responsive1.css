@@ -59,7 +59,7 @@
     
 }
 
-@media only screen and (min-width: 1921px) and (max-width: 2560px){
+@media only screen and (min-width: 2161px) and (max-width: 2560px){
     h1{font-size: 50px;}
     html{font-size: 25px;}
     .carousel-container a img, .carrusel .img { 
@@ -118,7 +118,21 @@
     }
 }
 
-@media only screen and (min-width: 1441px) and (max-width: 1920px){
+@media only screen and (min-width: 1921px) and (max-width: 2160px){
+    .imgp{
+        width: 280px;
+        height: 280px;
+    }
+}
+
+@media only screen and (min-width: 1801px) and (max-width: 1920px){
+    .imgp{
+        width: 270px;
+        height: 270px;
+    }
+}
+
+@media only screen and (min-width: 1441px) and (max-width: 1800px){
     .encabezado,.encabezadorosa, .encabezadoaz{
         height: 80px;
     }
@@ -137,7 +151,7 @@
 
 }
 
-@media only screen and (min-width: 1025px) and (max-width: 1920px){
+@media only screen and (min-width: 1025px) and (max-width: 1440px){
     h1{font-size: 50px;}
     html{font-size: 25px;}
     .encabezado,.encabezadorosa, .encabezadoaz{
