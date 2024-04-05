@@ -21,6 +21,13 @@
   font-weight: 500;
   font-style: normal;
 }
+.transparente_grande{
+    font-family: "Kodchasan", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 22px;
+    color:#9E9E9E;
+}
 
 .kodchasan-semibold{
   font-family: "Kodchasan", sans-serif;
@@ -1014,4 +1021,14 @@ textarea {
     width: 100%; /* Establece el ancho al 100% del contenedor */
     box-sizing: border-box; /* Esto hace que el ancho incluya el padding y el borde */
     outline: none; /* Quita el contorno al enfocar */
+}
+
+.agrupador{
+    border:solid;
+    border-radius: 1em;
+    border-color: #78A55A;
+    display: flex;
+    margin: .5%;
+    justify-content: center;
+    width: 48%;
 }
