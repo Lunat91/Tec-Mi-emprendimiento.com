@@ -381,6 +381,8 @@ ul{
 {
     margin-left: 0;
     margin-right: 0;
+    justify-content:end
+
 }
 
 li{
@@ -716,7 +718,7 @@ button {
 
 }
 
-.cambios {
+.cambios, .resena_modal {
     position: fixed;
     align-self: center;
     top: 50%;
@@ -737,7 +739,7 @@ button {
     
 
 }
-.cambios-container {
+.cambios-container,.resena_modal {
     margin: auto;
     place-items: center;
     grid-auto-columns: 100%;
@@ -753,14 +755,11 @@ button {
 }
 
 
-#btn-modaaal {
-    display: none;
-}
-#btn-cambios{
+#btn-modaaal,#btn-cambios, #btn-resena {
     display: none;
 }
 
-#btn-cambios:checked ~ .cambios {
+#btn-cambios:checked ~ .cambios,#btn-resena:checked ~ .resena_modal {
     display: flex;
     transition: opacity  0.3s ease-in-out;
     opacity: 100%;
@@ -1054,11 +1053,24 @@ textarea {
 }
 
 .cuadro{
-    background-color:#BFC7D8;
+    background-color:aliceblue;
     border-radius: 1em;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px #A6B49B;
+    color:#9E9E9E;
 }
 
 input{
     border: none;
     width: 100%;
+}
+
+.verdecaja{
+    background-color:#EEFFE0;
 }

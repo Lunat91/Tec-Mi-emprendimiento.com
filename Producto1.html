@@ -73,10 +73,22 @@
             <p class="Price">$2000 COP</p>
         </div>
         <div class="uno cero"></div>
-        <div class="cinco">
+        <div class="cuatro">
             <nav>
                 <ul class="botonesrectos" id="nadademg">
-                    <li class="botones">Agregar al carrito</li>
+                    <label for="btn-cambios">
+                        <p class="botones">Agregar al carrito</p>
+                    </label>
+                    <input type="checkbox" id="btn-cambios"> <!--Ventana de busqueda encima de todo-->
+                        <div class="cambios">
+                            <div class="cambios-container">
+                                <p >Ha sido agregado al carrito</p>
+                                <a href="Producto1.html">
+                                    <p class="botonv">Aceptar</p>
+                                </a>
+                            </div>
+                        </div>
+                    <li></li>
                     <li> <a href="Carrito.html" class="botonv">Comprar</a></li>
                 </ul>
             </nav>
@@ -84,7 +96,6 @@
         <div>
             <div class="flexspacen">
                 <h2 class="seis tituloCR"> Calificaciones y reseñas </h2>
-                <div class="dos portre"><p class="botones">Agregar reseña</p></div>
             </div>
             <div class="flexspace">
                 <div class="dos portre">
@@ -92,6 +103,29 @@
                     <h3 class="h3n">de 5.0</h3>
                 </div>
             </div>
+
+            <div class="flexspacen">
+                <h2 class="seis tituloCR"> Tu Reseña </h2>
+            </div>
+            <div class="social-login verdecaja">
+                <textarea rows="5" cols="10" class="transparente_negro"placeholder="Tu reseña"></textarea>
+            </div>
+            <div class="dos "> 
+                <h2 class="transparente_negro cuadro verdecaja"> <input type="number" class="transparente_negro" placeholder="Estrellas" step="1" max="5" min="1" ></h2>
+            </div>
+            <label for="btn-resena cien">
+                <p class="botones ">Agregar reseña</p>
+            </label>
+            <input type="checkbox" id="btn-resena"> <!--Ventana de busqueda encima de todo-->
+                <div class="resena_modal">
+                    <div class="cambios-container">
+                        <p >Ha sido enviada la reseña</p>
+                        <a href="Producto1.html">
+                            <p class="botonv">Aceptar</p>
+                        </a>
+                    </div>
+                </div>
+
             <div>
                 <div class="flexspace">
                     <h3 class="seis titulor">Geniales!</h3>
