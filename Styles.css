@@ -255,7 +255,7 @@ a{
     transform: scale(1.1);
 }
 
-.carrusel{
+.carrusel, .minicarrusel{
     width:auto;
     max-width: 120cm;
     display: flex;
@@ -264,6 +264,13 @@ a{
     white-space: nowrap;
     position: relative;
 }
+.minicarrusel{
+    max-width: 184px;
+    position: inherit;
+    padding: 10px;;
+}
+
+
 
 .carrusel .img{
     width: 163px;
@@ -458,17 +465,13 @@ nav ul li a{
     font-size:16px;
 }
 
-.imgp, .imgpp
+.imgp
 {
     width: 163px;
     height: 163px;
     transition: transform 0.5s ease-in-out;
 }
 
-.imgpp
-{
-    padding: 10px;
-}
 .logoinicio
 {
     width: 200px;
@@ -996,6 +999,8 @@ button {
 }
 
 .cuadrogris{
-    background-color: #9E9E9E;
-    box-shadow:  0px 0px 10px 5px #363636;
+    background-color: #bebcbca2;
+    box-shadow: 0px 0px 10px 5px  #c4c5ca;
+    border-radius: .8em;
+    padding: 10px;
 }
