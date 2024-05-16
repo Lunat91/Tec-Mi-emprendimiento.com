@@ -22,21 +22,15 @@ if ($result->num_rows > 0) {
     }
 }
 
-// Leer el contenido actual del archivo JSON
-$archivo_json = 'galeria.json';
-$json_existente = file_get_contents($archivo_json);
-$datos_existente = json_decode($json_existente, true);
+// Crear el JSON con los datos de los productos
+$json_data = array("productos" => $productos);
+$json_string = json_encode($json_data, JSON_PRETTY_PRINT);
 
-// Fusionar los datos nuevos con los datos existentes
-$datos_actualizados = array_merge($datos_existente, array("productos" => $productos));
+// Guardar el JSON en un archivo
+$archivo_json = 'productos.json';
+file_put_contents($archivo_json, $json_string);
 
-// Convertir los datos actualizados a formato JSON
-$json_actualizado = json_encode($datos_actualizados, JSON_PRETTY_PRINT);
-
-// Guardar el JSON actualizado en el archivo
-file_put_contents($archivo_json, $json_actualizado);
-
-echo "JSON actualizado y guardado en el archivo '$archivo_json'";
+echo "JSON generado y guardado en el archivo '$archivo_json'";
 
 // Cerrar la conexión
 $conn->close();
