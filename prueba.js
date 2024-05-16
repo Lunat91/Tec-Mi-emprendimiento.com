@@ -1,4 +1,6 @@
 // Función para crear un elemento "a" con una imagen dentro y la clase "img"
+include
+
 function createImageLinkWithClass(href, src, alt) {
     var a = document.createElement("a");
     a.href = href;

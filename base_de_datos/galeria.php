@@ -22,6 +22,10 @@ if ($result->num_rows > 0) {
     }
 }
 
+// Imprimir los datos antes de crear el JSON
+echo "Datos enviados al archivo JSON:\n";
+print_r($productos);
+
 // Crear el JSON con los datos de los productos
 $json_data = array("productos" => $productos);
 $json_string = json_encode($json_data, JSON_PRETTY_PRINT);
