@@ -197,9 +197,26 @@ header{
 }
 
 
-.alineado_der{
-    align-items: right;
+.alineado_der {
+    text-align: right; /* Alinea los elementos a la derecha */
 }
+
+.alineado_der ul {
+    display: grid; /* Utiliza un layout de cuadrícula */
+    grid-auto-flow: column; /* Organiza los elementos en columnas */
+    gap: 10px; /* Espacio entre los íconos */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.alineado_der ul li:last-child {
+    margin-right: 0; /* Elimina el margen derecho del último ícono */
+}
+
+
+
+
 
 a{
     margin: 0;
@@ -405,11 +422,12 @@ nav ul li a{
 }
 
 .pie,.pier, .pieaz {
+    position: absolute;
     width: 100%;
     margin-top: 30px;
     padding-top: 10px;
     padding-bottom: 20px;
-    height: fit-content;
+    height: 100%;
     background: #EEFFE0;
     text-align: center;
 }
