@@ -169,7 +169,7 @@ header{
     margin-top: -100px; /*Tamaño del encabezado*/
     display: relative;
     position: fixed;
-    max-width: 100%;
+    width: 100%;
 }
 
 .encabezado, .encabezadorosa, .encabezadoaz{
