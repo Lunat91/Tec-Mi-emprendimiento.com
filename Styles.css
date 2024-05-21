@@ -1057,7 +1057,6 @@ button {
 }
 
 textarea {
-    border: none;
     resize: none; /* Esto evita que el usuario pueda redimensionar el textarea */
     width: 100%; /* Establece el ancho al 100% del contenedor */
     box-sizing: border-box; /* Esto hace que el ancho incluya el padding y el borde */
