@@ -683,6 +683,7 @@ button {
     justify-content: space-between;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .flexspace2{
@@ -811,15 +812,14 @@ button {
     pointer-events: auto; /* Restablece la interactividad cuando la modal está visible */
 }
 
+
 .modal1{
     position: absolute;
-    top: 80px;
     width: 400px;
-    height: 220px;
-    max-width: 600px;
-    max-height: 1400px;
+    right: 0%;
     background-color: #EEFFE0;
     display: flex;
+    flex-wrap: wrap;
     border-bottom-left-radius: 40px;
     border-bottom-right-radius: 40px;
     align-items: center;
