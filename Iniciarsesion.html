@@ -22,43 +22,26 @@
             </div>
         </div>
         <div class="tres cien">
-   
-            <div class="column-form cuadro-fondo">
-                <h1 class="titulov">Inicia sesión</h1>
-                <label for="email" class="espacioFormlariosLabel0"></label><!-- aqui quedeeee-->
-                <input type="email" id="email" name="email" class="transparente_negro cuadro espacioFormlariosInputIzq" value="Correo">
-                <label for="nombreEmpresa" class="espacioFormlariosLabel0"></label>
-                <input type="email" id="nombreEmpresa" name="nombreEmpresa" class="transparente_negro cuadro espacioFormlariosInputIzq" value="Correo">
-                
-                <div class="social-login">
-                    <textarea rows="1" cols="10" class="transparente" placeholder="E-mail"></textarea>
-                </div>
-                <div class="social-login">
-                    <textarea rows="1" cols="10" class="transparente" placeholder="Contraseña"></textarea>
-                </div>  
 
-                <a href="#">
-                <div class="linkv" id="linksmall"> <br>Recuperar contraseña</div>
-                </a>
+        <form action="DB/iniciar_sesion.php" method="post" enctype="multipart/form-data" class="column-form cuadro-fondo">
+            <h1 class="titulov">Inicia sesión</h1>
+            <label for="email" class="espacioFormlariosLabel0"></label><!-- aqui quedeeee-->
+            <input type="email" id="email" name="email" class="transparente_negro cuadro espacioFormlariosInputIzq" placeholder="Correo">
+            <label for="nombreEmpresa" class="espacioFormlariosLabel0"></label>
+            <input type="text" id="password" name="password" class="transparente_negro cuadro espacioFormlariosInputIzq" placeholder="Contraseña">
 
-                <div> <p> </p></div>
-                <a href="index.html">
-                    <div class="botonv"> Continuar</div>
+            <a href="index.html">
+                <input type="submit" value="Continuar" class="botonv kodchasan-regular ">
+            </a>
+            <p>
+                ¿No tienes una cuenta aún? 
+                <a href="registrarse.html" class="linkv">
+                Registrate aquí
                 </a>
-                <p> ó </p>
-                
-                <button id="iniciarsesiongoogle">
-                    <img src="Images\Logos\GoogleLogo.png" alt="Google" id="imgGoogle">
-                    Inicia sesión con Google
-                    </button>
-                <p>
-                    ¿No tienes una cuenta aún? 
-                    <a href="registrarse.html" class="linkv">
-                    Registrate aquí
-                    </a>
-                </p>
-                
-            </div>
+            </p>
+        </form>
+
+
         </div>
     
   

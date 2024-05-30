@@ -22,33 +22,24 @@
         </div>
 
         <div class="tres cien">
-            <div class="column-form cuadro-fondo">
-                <div > <h1 class="titulov">Regístrate</h1></div>
-                <div class="social-login">
-                    <textarea rows="1" cols="10" class="transparente"placeholder="E-mail"></textarea>
-                </div>
-                <div class="social-login">
-                    <textarea rows="1" cols="10" class="transparente"placeholder="Contraseña"></textarea>
-                </div>  
+            <form action="DB/registrarse.php" method="post" enctype="multipart/form-data" class="column-form cuadro-fondo">
+            <h1 class="titulov">Registrate</h1>
+            <input type="text" id="nickname" name="nickname" class="transparente_negro cuadro espacioFormlariosInputIzq" placeholder="Nickname">
+            <input type="text" id="nombre" name="nombre" class="transparente_negro cuadro espacioFormlariosInputIzq" placeholder="Nombre Completo">
+            <input type="number" id="celular" name="celular" class="transparente_negro cuadro espacioFormlariosInputIzq" placeholder="Celular">
+            <input type="email" id="email" name="email" class="transparente_negro cuadro espacioFormlariosInputIzq" placeholder="Correo">
+            <input type="text" id="password" name="password" class="transparente_negro cuadro espacioFormlariosInputIzq" placeholder="Contraseña">
 
-                <div> <p> </p></div>
-                <a href="rol.html">
-                    <div class="botonv"> Continuar</div>
+            <a href="index.html">
+                <input type="submit" value="Registrarme" class="botonv kodchasan-regular ">
+            </a>
+            <p>
+                ¿Ya tienes cuenta? 
+                <a href="Iniciarsesion.html" class="linkv">
+                Inicia sesion aqui
                 </a>
-                <p> ó </p>
-                
-                <button id="iniciarsesiongoogle">
-                    <img src="Images\Logos\GoogleLogo.png" alt="Google" id="imgGoogle">
-                    Inicia sesión con Google
-                    </button>
-                <p>
-                    ¿Ya tienes una cuenta? 
-                    <a href="Iniciarsesion.html" class="linkv">
-                    Inicia sesión aquí
-                    </a>
-                </p>
-                
-            </div>
+            </p>
+        </form>
             
         </div>
   
