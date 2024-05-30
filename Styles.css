@@ -726,6 +726,13 @@ button {
     align-items: center;
 }
 
+.cuadroTexto{
+    border: solid;
+    border-width: .1em;
+    border-radius: .5em;
+    height: 30px;
+}
+
 .espacioFormlariosLabel {
     margin: 10px 0 5px;
 }
@@ -733,6 +740,7 @@ button {
 .espacioFormlariosInput {
     margin-bottom: 15px;
     align-items: center;
+    text-align: center;
 }
 
 

@@ -38,23 +38,20 @@
             </nav>
             <nav class="alineado_der">
                 <ul>
-                        <label for="btn-modal1">
-                        <img src="Images\Logos\usuario.png" alt="usuario" class="imgI">
-                        </label>
-                        <input type="checkbox" id="btn-modal1"> <!-- Ventana de búsqueda encima de todo -->
-                        <div class="modal1">
-                            <div class="modal-container1">
-                                <h2 class="h2m">Menú</h2>
-                                <div class="flexspace1">
-                                    <a href="Usuario.html" class="button-link buttonmenu"><button class="lalal">Ver perfil</button></a>
-                                    <a href="EditarPerfil.html" class="button-link buttonmenu"><button class="lalal">Editar mi perfil</button></a>
-                                    <a href="Iniciarsesion.html" class="button-link buttonmenu"><button class="lalal">Cerrar sesión</button></a>
-                                </div>
+                    <label for="btn-modal1">
+                    <img src="Images\Logos\usuario.png" alt="usuario" class="imgI">
+                    </label>
+                    <input type="checkbox" id="btn-modal1"> <!-- Ventana de búsqueda encima de todo -->
+                    <div class="modal1">
+                        <div class="modal-container1">
+                            <h2 class="h2m">Menú</h2>
+                            <div class="flexspace1">
+                                <a href="Usuario.html" class="button-link buttonmenu"><button class="lalal">Ver perfil</button></a>
+                                <a href="EditarPerfil.html" class="button-link buttonmenu"><button class="lalal">Editar mi perfil</button></a>
+                                <a href="Iniciarsesion.html" class="button-link buttonmenu"><button class="lalal">Cerrar sesión</button></a>
                             </div>
                         </div>
-                    
-                    <li><a href="Carrito.html"><img src="Images\Logos\carro-de-la-compra.png" alt="carrito" class="imgI"></a></li>
-                    <!--<li><a href="adminindex.html"><span class="material-symbols-outlined" alt="accederadmin">shield_person</span></a></li>-->
+                    </div>
                 </ul>
             </nav>
         </div> 
@@ -73,103 +70,86 @@
         </div>
     </div>
     <div class="uno"></div>
+    <form action="DB/editar_informacion.php" method="post" enctype="multipart/form-data" class="ocho">
+        <div class="">
 
-    <div class="uno"></div>
-    <div class="dos">Nombre de usuario:</div>
-    <div class="tres"> 
-        <textarea rows="2" cols="20" class="pligther" placeholder="Nombre de usuario">Mateo Ruiz</textarea>
-    </div>
-    <div class="uno"> 
-        <span class="material-symbols-outlined">
-            edit
-        </span>
-    </div>
-    <div class="uno"></div>
+            <div class="centro">
+                <div class="uno"></div>
+                <div class="dos">
+                    <label for="nickName" class="espacioFormlariosLabel"> Nombre completo: </label>
+                </div>
+                <div class="tres">
+                    <input type="text" id="nickName" name="nickName" class="espacioFormlariosInput cuadroTexto kodchasan-regular" value="Mateo Ruiz">
+                </div>
+                <span class="material-symbols-outlined uno">
+                    edit
+                </span>
+            </div>
 
-    <div class="uno"></div>
-    <div class="dos">Nombre completo:</div>
-    <div class="tres"> 
-        <textarea rows="2" cols="20" class="pligther" placeholder="Nombre completo">Juan Mateo Ruiz López</textarea>
-    </div>
-    <div class="uno"> 
-        <span class="material-symbols-outlined">
-            edit
-        </span>
-    </div>
-    <div class="uno"></div>
+            <div class="centro">
+                <div class="uno"></div>
+                <div class="dos">
+                    <label for="fullName" class="espacioFormlariosLabel"> Nombre completo: </label>
+                </div>
+                <div class="tres">
+                    <input type="text" id="fullName" name="fullName" class="espacioFormlariosInput cuadroTexto kodchasan-regular" value="Juan Mateo Ruiz López">
+                </div>
+                <span class="material-symbols-outlined uno">
+                    edit
+                </span>
+            </div>
 
-    <div class="uno"></div>
-    <div class="dos"> Contraseña:</div>
-    <div class="tres"> 
-        <textarea rows="2" cols="20" class="pligther" placeholder="Contraseña">**********</textarea>
-    </div>
-    <div class="uno"> 
-        <span class="material-symbols-outlined">
-            edit
-        </span>
-    </div>
-    <div class="uno"></div>
+            <div class="centro">
+                <div class="uno"></div>
+                <div class="dos">
+                    <label for="correoUsuario" class="espacioFormlariosLabel"> Correo: </label>
+                </div>
+                <div class="tres">
+                    <input type="email" id="correoUsuario" name="correoUsuario" class="espacioFormlariosInput cuadroTexto kodchasan-regular" value="MegaMatt22@gmail.com">
+                </div>
+                <span class="material-symbols-outlined uno">
+                    edit
+                </span>
+            </div>
 
+            <div class="centro">
+                <div class="uno"></div>
+                <div class="dos">
+                    <label for="passwordUsuario" class="espacioFormlariosLabel"> Contraseña: </label>
+                </div>
+                <div class="tres">
+                    <input type="password" id="passwordUsuario" name="passwordUsuario" class="espacioFormlariosInput cuadroTexto kodchasan-regular" value="MegaMatt22.">
+                </div>
+                <span class="material-symbols-outlined uno">
+                    edit
+                </span>
+            </div>
 
+            <div class="centro">
+                <div class="uno"></div>
+                <div class="dos">
+                    <label for="celUsuario" class="espacioFormlariosLabel"> Celular: </label>
+                </div>
+                <div class="tres">
+                    <input type="tel" id="celUsuario" name="celUsuario" class="espacioFormlariosInput cuadroTexto kodchasan-regular" value="3205625159" maxlength="10">
+                </div>
+                <span class="material-symbols-outlined uno">
+                    edit
+                </span>
+            </div>
+            
+            <div class="ocho"></div>
+            <div class="centro">
+                <div class="dos cero"></div>
+                <div class="cuatro cien">
+                    <input type="submit" value="Guardar cambios" class="botonv kodchasan-regular ">
+                </div>
+                <div class="dos cero"></div>
+            </div>
 
-    <div class="uno"></div>
-    <div class="dos">CC:</div>
-    <div class="tres"> 
-        <textarea rows="2" cols="20" class="pligther" placeholder="Cedula">5278860155</textarea>
-    </div>
-    <div class="uno"> 
-        <span class="material-symbols-outlined">
-            edit
-        </span>
-    </div>
-    <div class="uno"></div>
-
-    <div class="uno"></div>  
-    <div class="dos">Celular:</div>
-    <div class="tres"> 
-        <textarea rows="2" cols="20" class="pligther" placeholder="Celular">3007865430</textarea>
-
-    </div>
-    <div class="uno"> 
-        <span class="material-symbols-outlined">
-            edit
-        </span>
-    </div> 
-    <div class="uno"></div>
-
-    <div class="uno"></div>
-    <div class="dos">Correo:</div>
-    <div class="tres">
-        <textarea rows="2" cols="20" class="pligther" placeholder="Correo">MegaMatt22@gmail.com</textarea>
-   
-    </div>
-    <div class="uno"> 
-        <span class="material-symbols-outlined">
-            edit
-        </span>
-    </div> 
-    <div class="uno"></div>
-
-
-    <div class="tres"></div>
-    <div class="dos cien">  
-   
-        <label for="btn-cambios">
-            <p class="botonv">Guardar cambios</p>
-        </label>
-
-    </div>
-    <div class="tres"></div>
-    
-    <input type="checkbox" id="btn-cambios"> <!--Ventana de busqueda encima de todo-->
-    <div class="cambios">
-        <div class="cambios-container">
-            <p >Cambios guardados</p>
-            <a href="Usuario.html">
-                <p class="botonv">Aceptar</p>
-            </a>
         </div>
-    </div>
+
+    </form>
 
 </div>
 <footer class="pie">
@@ -182,7 +162,6 @@
             <label for="btn-modaaal">
                 <li>Búsqueda</li>
             </label>
-            <li><a href="Carrito.html">Carrito de compras</a></li>
             <li><a href="Usuario.html">Usuario</a></li>
         </ul>
     </nav>

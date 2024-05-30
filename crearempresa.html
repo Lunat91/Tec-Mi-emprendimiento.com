@@ -13,97 +13,77 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     </head>
 <body >
-  <header>
-    <div class="encabezadoaz">
-        <nav class="alineado_izq">
-            <!-- HOME -->
-            <a href="index.html">
-                <img src="Images\Logos\Miemprendimiento.png" alt="menú" class="imgI">
-            </a>
-  
-        </nav>
-        <nav class="alineado_der">
-            <ul>
-                    <label for="btn-modal1">
-                    <img src="Images\Logos\usuario.png" alt="usuario" class="imgI">
-                    </label>
-                    <input type="checkbox" id="btn-modal1"> <!-- Ventana de búsqueda encima de todo -->
-                    <div class="modal1">
-                        <div class="modal-container1">
-                            <h2 class="h2m">Menú</h2>
-                            <div class="flexspace1">
-                                <a href="Empresa1Perfil(vistaempresa).html" class="button-link buttonmenu"><button class="lalal">Ver perfil</button></a>
-                                <a href="modificarempresa.html" class="button-link buttonmenu"><button class="lalal">Editar mi perfil</button></a>
-                                <a href="Iniciarsesion.html" class="button-link buttonmenu"><button class="lalal">Cerrar sesión</button></a>
+    <header>
+        <div class="encabezadoaz">
+            <nav class="alineado_izq">
+                <!-- HOME -->
+                <a href="index.html">
+                    <img src="Images\Logos\Miemprendimiento.png" alt="menú" class="imgI">
+                </a>
+    
+            </nav>
+            <nav class="alineado_der">
+                <ul>
+                        <label for="btn-modal1">
+                        <img src="Images\Logos\usuario.png" alt="usuario" class="imgI">
+                        </label>
+                        <input type="checkbox" id="btn-modal1"> <!-- Ventana de búsqueda encima de todo -->
+                        <div class="modal1">
+                            <div class="modal-container1">
+                                <h2 class="h2m">Menú</h2>
+                                <div class="flexspace1">
+                                    <a href="Empresa1Perfil(vistaempresa).html" class="button-link buttonmenu"><button class="lalal">Ver perfil</button></a>
+                                    <a href="modificarempresa.html" class="button-link buttonmenu"><button class="lalal">Editar mi perfil</button></a>
+                                    <a href="Iniciarsesion.html" class="button-link buttonmenu"><button class="lalal">Cerrar sesión</button></a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                
-                <li><a href="PedidosPendientes.html"><img src="Images\Logos\carro-de-la-compra.png" alt="carrito" class="imgI"></a></li>
-                <!--<li><a href="adminindex.html"><span class="material-symbols-outlined" alt="accederadmin">shield_person</span></a></li>-->
-            </ul>
-        </nav>
-    </div> 
-</header>
-
-    <!-- Ventana de cerrar sesión encima de todo falta saber como se cierra
-    <input type="checkbox" id="btn-modal2"> 
-    <div class="modal2">
-        <div class="modal-container2">
-            <h2>¿Está seguro de querer cerrar sesión?</h2>
-            <div class="flexspace">
-                <button>Cancelar</button>
-                <button>Continuar</button>
-            </div>
-        </div>
-    </div>
-    -->
+                </ul>
+            </nav>
+        </div> 
+    </header>
 
     <div class="margenes_generales">
         <div class="uno"></div>
         <div class="seis"> <h2>Crea tu emprendimiento</h2></div>
         <div class="uno"></div>  <!--Título-->
         
-        <div class="cinco">
-            <div class="column-form">
-                <p> Dígite el nombre de su empresa:</p>
-                <div class="social-login">
-                    <textarea rows="2" cols="20" class="transparente"placeholder="Nombre empresa"></textarea>
+        <form action="crear_empresa.php" method="post" enctype="multipart/form-data" class="ocho">
+            <div class="column-form cien">
+                <label for="nombreEmpresa" class="espacioFormlariosLabel"> Dígite el nombre de su empresa:</label>
+                <input type="text" id="nombreEmpresa" name="nombreEmpresa" class="transparente_negro cuadro espacioFormlariosInput">
+            
+                <label for="redSocial" class="espacioFormlariosLabel"> Pega el link de la red social de su empresa:</label>
+                <input type="url" id="redSocial" name="redSocial" class="transparente_negro cuadro espacioFormlariosInput">
+            
+                <label for="fotoEmpresa" class="espacioFormlariosLabel">Selecciona una foto:</label>
+                <input type="file" id="fotoEmpresa" name="fotoEmpresa" class="espacioFormlariosInput" accept="image/*">
+            
+                <label for="descripcionEmpresa" class="espacioFormlariosLabel"> Dígite la descripción de su empresa:</label>
+                <input type="text" id="descripcionEmpresa" name="descripcionEmpresa" class="transparente_negro cuadro espacioFormlariosInput">
+                
+                <div class="ocho"></div>
+                <div class="centro">
+                    <div class="dos cero"></div>
+                    <div class="cuatro cien">
+                        <input type="submit" value="Continuar" class="botonv kodchasan-regular ">
+                    </div>
+                    <div class="dos cero"></div>
                 </div>
-                <p> Dígite la red social de su empresa:</p>
-                <div class="social-login">
-                    <textarea rows="2" cols="20" class="transparente"placeholder="Red social"></textarea>
+                
+                <div class="ocho"></div>
+                <div class="centro">
+                    <div class="dos cero"></div>
+                    <div class="cuatro cien">
+                        <input type="button" value="Cancelar" class="botonrosa kodchasan-regular ">
+                    </div>
+                    <div class="dos cero"></div>
                 </div>
-                <p> Dígite la descripción de su empresa:</p>
-                <div class="social-login" id="biggerlogin">
-                    <textarea rows="5" cols="20" class="transparente"placeholder="Descripción"></textarea>
-                </div>
+
             </div>
 
-        </div>
-        <div class="tres cien">
-            <div class="column-form">
-                <p> Suba aquí el logo de su empresa</p>
-                <div class="subirimagen">
-                    <span class="material-symbols-outlined">
-                        image
-                    </span>
-                </div>
-                <input type="file" class="cuatro" accept="image/*">
+        </form>
 
-                <div><p></p></div>
-                <a href="Empresa1Perfil(vistaempresa).html">
-                    <div class="botonv"> Continuar</div>
-                </a>
-                <div><p> </p></div>
-                <a href="Iniciarsesion.html">
-                    <div class="botonrosa"> Cancelar</div>
-                </a>
-    
-            </div>
-        </div>
-      
-  
     </div> <!-- fin margenes generales-->
 
     <footer class="pieaz">
@@ -113,7 +93,6 @@
     <nav>
         <ul>
             <li><a href="Empresa1Perfil(vistaempresa).html">Home</a></li>
-            <li><a href="PedidosPendientes.html">Pedidos pendientes</a></li>
         </ul>
     </nav>
     </footer>
