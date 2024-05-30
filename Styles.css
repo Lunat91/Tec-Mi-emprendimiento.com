@@ -366,6 +366,7 @@ nav ul{
     color: aliceblue;
     font-weight: 100;
     margin: 0;
+    font-size: 16px;
 }
 .botonaz {
     background-color: #5B65A6;
@@ -501,6 +502,13 @@ nav ul li a{
     font-size:16px;
 }
 
+.redsocialprincipal /* se usa en producto 1 para destacar las palabras "red social"*/
+{
+    color:#78A55A;
+    font-weight: bold;
+    font-size:18px;
+}
+
 .imgp
 {
     width: 163px;
@@ -532,7 +540,7 @@ nav ul li a{
     text-align: center;
 }
 
-.imgprod, .imgenvio{
+.imgprod{
     width: 100%;
     max-width: 500px;
     max-height: 500px;
@@ -540,20 +548,23 @@ nav ul li a{
     aspect-ratio: 1/1;
     margin-top: 40px ;
     transition: transform 0.5s ease-in-out;
+    border-radius: 0.5em;
 }
-.imgenvio{
-    display: flex;
-    justify-self: flex-start;
-}
+
 .imgrol{
     width: 140px;
     height: 140px;
     justify-self: center;
     margin-top: 20px;
 }
+
+.DM{ /*MENSAJE DIRECTO, se usa en produto 1 para describir donde pueden comprar el producto*/
+       font-size: 18px;
+}
+
 .Price{
     font-weight:600;
-    text-align: left;
+    text-align: right;
     font-size: 24px;
 }
 
@@ -710,11 +721,21 @@ button {
     font-weight: 100;
 }
 
-.linea_del_tiempo {
+.centro {
     display: flex;
     align-items: center;
 }
-  
+
+.espacioFormlariosLabel {
+    margin: 10px 0 5px;
+}
+
+.espacioFormlariosInput {
+    margin-bottom: 15px;
+    align-items: center;
+}
+
+
 .circle, .circle_first {
     height: 70px; /* Hace que la altura del contenedor se ajuste automáticamente al contenido */
     width: 70px;
