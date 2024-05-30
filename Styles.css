@@ -737,12 +737,19 @@ button {
     margin: 10px 0 5px;
 }
 
-.espacioFormlariosInput {
+.espacioFormlariosLabel0{
+    margin: 0;
+}
+
+.espacioFormlariosInput, .espacioFormlariosInputIzq{
     margin-bottom: 15px;
     align-items: center;
     text-align: center;
 }
 
+.espacioFormlariosInputIzq{
+    text-align: left;
+}
 
 .circle, .circle_first {
     height: 70px; /* Hace que la altura del contenedor se ajuste automáticamente al contenido */
