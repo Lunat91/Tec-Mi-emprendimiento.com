@@ -4,6 +4,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Mi emprendimiento</title>
+        <script src="DB/usuario.js" defer></script>
+        <script src="DB/verificar_sesion.js" defer></script>
         <link rel="icon" type="image/png" href="Images/Logos/Miemprendimiento.png">
         <link rel="stylesheet" href="Styles.css">
         <link rel="stylesheet" href="Responsive1.css">
@@ -53,7 +55,12 @@
                                     <div class="flexspace1">
                                         <a href="Usuario.html" class="button-link buttonmenu"><button class="lalal">Ver perfil</button></a>
                                         <a href="EditarPerfil.html" class="button-link buttonmenu"><button class="lalal">Editar mi perfil</button></a>
-                                        <a href="Iniciarsesion.html" class="button-link buttonmenu"><button class="lalal">Cerrar sesión</button></a>
+                                        <a href="#" class="button-link buttonmenu" onclick="cerrarSesion()"><button class="lalal">Cerrar sesión</button></a>
+                                        <script> 
+                                        function cerrarSesion() {
+                                            // Aquí va la lógica para cerrar sesión, por ejemplo, redireccionar a otra página
+                                            window.location.href = "DB/cerrarsesion.php";}
+                                        </script>
                                     </div>
                                 </div>
                             </div>
@@ -63,50 +70,7 @@
         </header>
 
         <div class="margenes_generales content">
-            <div class="tres"> 
-                <img src="Images/Logos/perfilPredeterminado.png" alt="Perfil 1" class="imgperfil">
-            </div>
-            <div class="cinco">
-                <div>
-                    <h3>¡Hola Mateo Ruiz! <br> Estás en tu perfil de usuario.</h3> 
-                </div>
-            </div>
             
-            <div class="ocho">
-                <h2 class="semiboldmargenes">Tu información personal:</h2>
-        
-                <nav class="MostrarListaDatos">
-                    <ul>
-                        <li class="info">
-                            Nombre de usuario: <b>Mateo Ruiz</b> 
-                        </li>
-                        <li class="info">
-                            Nombre Completo: <b>Juan Mateo Ruiz López</b>
-                        </li>
-                        <li  class="info">
-                            Correo: <b>MegaMatt22@gmail.com</b>
-                        </li>
-                        <li class="info">
-                            Celular: <b>3205625159</b>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-            
-            <div class="dos"></div>
-            <div class="cuatro cien">  
-                <a href="EditarPerfil.html">
-                    <p class="botonv">Editar información personal</p>
-                </a>
-            </div>
-            <div class="dos"></div>
-            <div class="dos"></div>
-            <div class="tres cien">  
-                <a href="Iniciarsesion.html">
-                <p class="botonrosa">Cerrar sesión</p>
-                </a>
-            </div>
-            <div class="dos"></div>
         </div>
         
         <footer class="pie">

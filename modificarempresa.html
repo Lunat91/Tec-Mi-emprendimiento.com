@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi emprendimiento</title>
     <link rel="icon" type="image/png" href="Images\Logos\Miemprendimiento.png">
+     <script src="DB/modificarempresa.js" defer></script>
+     <script src="DB/verificar_sesion.js" defer></script>
     <link rel="stylesheet" href="Styles.css">
     <link rel="stylesheet" href="Responsive1.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -34,7 +36,12 @@
                                     <div class="flexspace1">
                                         <a href="Empresa1Perfil(vistaempresa).html" class="button-link buttonmenu"><button class="lalal">Ver perfil</button></a>
                                         <a href="modificarempresa.html" class="button-link buttonmenu"><button class="lalal">Editar mi perfil</button></a>
-                                        <a href="Iniciarsesion.html" class="button-link buttonmenu"><button class="lalal">Cerrar sesión</button></a>
+                                        <a href="#" class="button-link buttonmenu" onclick="cerrarSesion()"><button class="lalal">Cerrar sesión</button></a>
+                                        <script> 
+                                        function cerrarSesion() {
+                                            // Aquí va la lógica para cerrar sesión, por ejemplo, redireccionar a otra página
+                                            window.location.href = "DB/cerrarsesion.php";}
+                                        </script>
                                     </div>
                                 </div>
                             </div>
@@ -44,67 +51,16 @@
         </header>
     
         <div class="margenes_generales content">
-            <div class="uno"></div>
-            <div class="seis"> <h2>Modificar Empresa</h2></div>
-            <div class="uno"></div>  <!--Título-->
-    
-            <form action="modificar_empresa.php" method="post" enctype="multipart/form-data" class="ocho">
-    
-                <div class="ocho centro">
-                    <div class="tres">
-                        <label for="fotoEmpresa" class="espacioFormlariosLabel">Imagen</label>
-                        <input type="file" id="fotoEmpresa" name="fotoEmpresa" class="espacioFormlariosInput" accept="image/*">
-                    </div>
-                    <div class="dos"></div>
-                    <div class="tres">
-                        <label for="descripcionEmpresa" class="espacioFormlariosLabel">Descripción</label>
-                        <textarea id="descripcionEmpresa" name="descripcionEmpresa" class="transparente_negro cuadro espacioFormlariosInputIzq">Stickers en vinilo adhesivo. Resistentes al agua. Ideales para interior o exterior.</textarea>
-                    </div>
-                </div>
-                
-                <div class="ocho centro">
-                    <div class="tres">
-                        <label for="nombreEmpresa" class="espacioFormlariosLabel"> Nombre</label>
-                    <input type="text" id="nombreEmpresa" name="nombreEmpresa" class="transparente_negro cuadro espacioFormlariosInput" value="Rótelo & péguelo">
-                    </div>
-                    <div class="dos"></div>
-                    <div class="tres">
-                        <label for="redSocial" class="espacioFormlariosLabel">Red social</label>
-                        <input type="url" id="redSocial" name="redSocial" class="transparente_negro cuadro espacioFormlariosInput" value="https://www.instagram.com/rotelo_y_peguelo.stickers/">
-                    </div>
-                </div>
-            
-                <div class="ocho"></div>
-                <div class="centro">
-                    <div class="tres">
-                        <input type="submit" value="Guardar cambios" class="botonv kodchasan-regular ">
-                        <div class="uno"></div>
-                        <input type="submit" value="Cancelar" class="botonaz kodchasan-regular ">
-                    </div>
-                    <div class="dos"></div>
-                    <div class="tres">
-                        <input type="submit" value="Eliminar Empresa" class="botonrosa kodchasan-regular ">
-                    </div>
-                </div>
-                
-            </form>
-            
-            <input type="checkbox" id="btn-cambios"> <!--Ventana de busqueda encima de todo-->
-            <div class="cambios">
-                <div class="cambios-container">
-                    
-                    <p >"¿Estás seguro?"</p>
-                    <div class="flexspace">
-                        <a href="modificarempresa.html">
-                            <p class="botonrosa">Cancelar</p>
-                        </a>
-                        <a href="Iniciarsesion.html">
-                            <p class="botonv">Confirmar</p>
-                        </a> 
-                    </div>
-                </div>
-            </div>
+
         </div>
+        <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.getElementById("cancelarBtn").addEventListener("click", function() {
+                // Redirige a la página anterior
+                window.history.back();
+            });
+        });
+    </script>
     
         <footer class="pieaz">
           <figure> 
@@ -117,7 +73,6 @@
             </nav>
         </footer>
     </div>
-
 </body>
 </html>
 

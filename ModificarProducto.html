@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi emprendimiento</title>
     <link rel="icon" type="image/png" href="Images\Logos\Miemprendimiento.png">
+    <script src="DB/modificarproducto.js" defer></script>
+    <script src="DB/verificar_sesion.js" defer></script>
     <link rel="stylesheet" href="Styles.css">
     <link rel="stylesheet" href="Responsive1.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -35,7 +37,12 @@
                                     <div class="flexspace1">
                                         <a href="Empresa1Perfil(vistaempresa).html" class="button-link buttonmenu"><button class="lalal">Ver perfil</button></a>
                                         <a href="modificarempresa.html" class="button-link buttonmenu"><button class="lalal">Editar mi perfil</button></a>
-                                        <a href="Iniciarsesion.html" class="button-link buttonmenu"><button class="lalal">Cerrar sesión</button></a>
+                                        <a href="#" class="button-link buttonmenu" onclick="cerrarSesion()"><button class="lalal">Cerrar sesión</button></a>
+                                        <script> 
+                                        function cerrarSesion() {
+                                            // Aquí va la lógica para cerrar sesión, por ejemplo, redireccionar a otra página
+                                            window.location.href = "DB/cerrarsesion.php";}
+                                        </script>
                                     </div>
                                 </div>
                             </div>
@@ -45,68 +52,6 @@
         </header>
     
         <div class="margenes_generales">
-            <div class="uno"></div>
-            <div class="seis"> <h2>Modificar Producto</h2></div>
-            <div class="uno"></div>  <!--Título-->
-    
-            <form action="DB/modificar_producto.php" method="post" enctype="multipart/form-data" class="ocho">
-    
-                <div class="ocho centro">
-                    <div class="cuatro">
-                        <label for="foto" class="espacioFormlariosLabel">Imagen</label>
-                        <input type="file" id="foto" name="foto" class="espacioFormlariosInput" accept="image/*">
-                    </div>
-                    <div class="uno"></div>
-                    <div class="tres">
-                        <label for="nombreProducto" class="espacioFormlariosLabel"> Nombre del producto</label>
-                        <input type="text" id="nombreProducto" name="nombreProducto" class="transparente_negro cuadro espacioFormlariosInput" value="Spider - Cat">
-                    </div>
-                </div>
-                
-                <div class="ocho centro">
-                    <div class="cuatro">
-                        <label for="descripcionProducto" class="espacioFormlariosLabel">Descripción</label>
-                        <textarea id="descripcionProducto" name="descripcionProducto" class="transparente_negro cuadro espacioFormlariosInputIzq">Sticker de Spider - Cat animado Hecho en vinilo adhesivo Resistente al agua Dimensiones: 5.4cm x 4.5cm</textarea>
-                    </div>
-                    <div class="uno"></div>
-                    <div class="tres">
-                        <label for="precioProducto" class="espacioFormlariosLabel">Precio:</label>
-                    <input type="number" class="transparente_negro cuadro espacioFormlariosInputIzq" placeholder="$" step="1000" id="precioProducto" name="precioProducto" value="2000">
-                    </div>
-                </div>
-            
-                <div class="ocho"></div>
-                <div class="centro">
-                    <div class="cuatro">
-                        <input type="submit" value="Guardar cambios" class="botonv kodchasan-regular ">
-                        <div class="uno"></div>
-                        <input type="submit" value="Cancelar" class="botonaz kodchasan-regular ">
-                    </div>
-                    <div class="uno"></div>
-                    <div class="tres">
-                        <input type="submit" value="Eliminar producto" class="botonrosa kodchasan-regular ">
-                    </div>
-                </div>
-            </form>
-    
-            <input type="checkbox" id="btn-cambios"> <!--Ventana de busqueda encima de todo-->
-            <div class="cambios">
-                <div class="cambios-container">
-                    
-                    <p >"¿Estás seguro?"</p>
-                    <div class="flexspace">
-                        <a href="ModificarProducto.html">
-                            <p class="botonrosa">Cancelar</p>
-                        </a>
-                        <a href="Empresa1Perfil(vistaempresa).html">
-                            <p class="botonv">Confirmar</p>
-                        </a> 
-                    </div>
-                </div>
-            </div>
-    
-            <div class="uno"></div>
-    
         </div>
     
         <footer class="pieaz">

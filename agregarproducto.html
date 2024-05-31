@@ -36,7 +36,12 @@
                                   <div class="flexspace1">
                                       <a href="Empresa1Perfil(vistaempresa).html" class="button-link buttonmenu"><button class="lalal">Ver perfil</button></a>
                                       <a href="modificarempresa.html" class="button-link buttonmenu"><button class="lalal">Editar mi perfil</button></a>
-                                      <a href="Iniciarsesion.html" class="button-link buttonmenu"><button class="lalal">Cerrar sesión</button></a>
+                                      <a href="#" class="button-link buttonmenu" onclick="cerrarSesion()"><button class="lalal">Cerrar sesión</button></a>
+                                        <script> 
+                                        function cerrarSesion() {
+                                            // Aquí va la lógica para cerrar sesión, por ejemplo, redireccionar a otra página
+                                            window.location.href = "DB/cerrarsesion.php";}
+                                        </script>
                                   </div>
                               </div>
                           </div>
@@ -104,5 +109,3 @@
     </div>
 </body>
 </html>
-
-
