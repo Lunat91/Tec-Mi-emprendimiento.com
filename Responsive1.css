@@ -43,7 +43,7 @@
         width: 650px;
         height: 650px;
     }
-    .Nombre_p, .titulor, .h2n, .tituloCR{
+    .Nombre_p, .titulor, .h2n, .tituloCR, .DM, .redsocialprincipal{
         font-size: 50px;
     }
     .descrip_p, .gray, .info, .Price{
@@ -104,7 +104,7 @@
         width: 600px;
         height: 600px;
     }
-    .Nombre_p, .titulor, .h2n, .tituloCR{
+    .Nombre_p, .titulor, .h2n, .tituloCR, .DM, .redsocialprincipal{
         font-size: 45px;
     }
     .botones, .botonv, .botonrosa, .botonaz{
@@ -182,7 +182,7 @@
         font-size: 20px;
         margin-left: 100px;
     }
-    .Nombre_e{
+    .Nombre_e, .DM, .redsocialprincipal{
         font-size: 25px;
     }
     .imgp{
