@@ -46,7 +46,7 @@
     .Nombre_p, .titulor, .h2n, .tituloCR{
         font-size: 50px;
     }
-    .descrip_p, .gray, .Resena, .Price{
+    .descrip_p, .gray, .info, .Price{
         font-size: 40px;
     }
     .h3n{
@@ -113,7 +113,7 @@
     .h3n{
         font-size: 25px;
     }
-    .descrip_p, .gray, .Resena, .Price{
+    .descrip_p, .gray, .info, .Price{
         font-size: 35px;
     }
 }

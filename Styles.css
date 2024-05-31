@@ -81,7 +81,25 @@ body{
     font-family:"Kodchasan", Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-  }
+    height: 100%;
+}
+
+html{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.content {
+    flex: 1;
+}
+
 
 /*
 12 COLUMNAS
@@ -156,7 +174,6 @@ Cada columna tiene un tamaño de 12.5%
 
 
 
-
 /*-------------ANTERIOR CSS---------------------*/
 
 /*border: 4px solid #ed0000;  Añade un borde de 1px sólido con color gris claro */
@@ -166,8 +183,8 @@ Cada columna tiene un tamaño de 12.5%
 }
 
 header{
-    margin-top: -100px; /*Tamaño del encabezado*/
-    display: relative;
+    margin-top: px; /*Tamaño del encabezado*/
+    /*display: relative;*/
     position: fixed;
     width: 100%;
 }
@@ -179,7 +196,8 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: none;
+    margin: 0;
+    padding: 0 ;
 }
 .encabezadorosa{
     background: #FAD0C1;
@@ -257,14 +275,6 @@ a{
     aspect-ratio: 1/1;
     border-radius: 200px;
     max-width: 170px;
-}
-
-.imgopcionespago{
-    width: 100%;
-    height: auto;
-    aspect-ratio: 1/1;
-    border-radius: 15px;
-    max-width: 120px;
 }
 
 .contenedor{
@@ -367,6 +377,7 @@ nav ul{
     font-weight: 100;
     margin: 0;
     font-size: 16px;
+    white-space: normal;
 }
 .botonaz {
     background-color: #5B65A6;
@@ -385,7 +396,7 @@ nav ul{
     background-color:#F5A386;
 }
 
-ul{
+ul, .listaEmpresa{
     margin-left: 16.66%;  /*2 COLUMNAS*/
     margin-right: 16.66%;  /*2 COLUMNAS*/
     display: flex;
@@ -394,6 +405,10 @@ ul{
     align-items: center;
     margin: none;
 }
+.listaEmpresa{
+    justify-content: center;
+}
+
 
 #nadademg /*id hecha para la UL de bon¿tones y precios*/
 {
@@ -423,12 +438,11 @@ nav ul li a{
 }
 
 .pie,.pier, .pieaz {
-    position: absolute;
-    width: 100%;
-    margin-top: 30px;
-    padding-top: 10px;
-    padding-bottom: 20px;
+    position: sticky;
     height: 100%;
+    margin: auto 0 0;
+    width: 100%;
+    padding: 10px;
     background: #EEFFE0;
     text-align: center;
 }
@@ -478,7 +492,7 @@ nav ul li a{
     margin: 30px 0 0 10px;
     font-size:20px;
 }
-.semibold, .semibold_morado{
+.semibold, .semibold_morado, .semiboldmargenes{
     font-weight: 500;
     color:#78A55A;
 }
@@ -486,6 +500,10 @@ nav ul li a{
 .semibold_morado{
     color:#6a81b5;
 }
+.semiboldmargenes{
+    font-weight: 600;
+}
+
 
 .cuadradomorado:hover{
     background-color: #99a5e9;
@@ -556,6 +574,10 @@ nav ul li a{
     height: 140px;
     justify-self: center;
     margin-top: 20px;
+}
+
+.adjustableInput {
+    height: 50px;
 }
 
 .DM{ /*MENSAJE DIRECTO, se usa en produto 1 para describir donde pueden comprar el producto*/
@@ -637,21 +659,6 @@ button {
     
 }
 
-.Pago-button {
-    background-color: #4CAF50;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    display: block;
-    margin: 0 auto; /* Centrar el botón */
-    width: fit-content; /* Ancho automático según el contenido */
-    text-align: center;
-    
-}
-
-
 #botonAdd /*para que el botón no tenga margenes usado en producto 1*/
 {
     margin-left: 0;
@@ -659,17 +666,6 @@ button {
 }
 .tituloCR{
     text-align: left;
-}
-
-.h2n{ /*adecue h2 para calificaciones usado en prodcuto1*/
-    margin: 6px 0 0 5px;
-    font-weight: 600;
-
-}
-
-.h3n{ /*adecue h3 para calificaciones usado en prodcuto1*/
-    font-size: 15px;
-    font-weight: 500;
 }
 
 .gray{ /*clase para fecha y usuario en producto 1*/
@@ -715,10 +711,15 @@ button {
     height: 35px;
 }
 
-.Resena
+.MostrarListaDatos{
+    align-items: left;
+}
+
+.info
 {
-    text-align: left;
-    font-weight: 100;
+    font-size: 17px;
+    font-weight: 400;
+    margin-bottom: 15px;
 }
 
 .centro {
@@ -726,12 +727,6 @@ button {
     align-items: center;
 }
 
-.cuadroTexto{
-    border: solid;
-    border-width: .1em;
-    border-radius: .5em;
-    height: 30px;
-}
 
 .espacioFormlariosLabel {
     margin: 10px 0 5px;
@@ -745,21 +740,18 @@ button {
     margin-bottom: 15px;
     align-items: center;
     text-align: center;
+    border: none;
 }
 
 .espacioFormlariosInputIzq{
     text-align: left;
 }
 
-.circle, .circle_first {
-    height: 70px; /* Hace que la altura del contenedor se ajuste automáticamente al contenido */
-    width: 70px;
-    text-align: center;
-    width: 12.5%;
-}
-
-.circle_first{
-    background-color: #78A55A;
+.cuadroTexto{
+    border: solid;
+    border-width: .1em;
+    border-radius: .5em;
+    height: 30px;
 }
 
 .margen_derecha{
@@ -955,14 +947,7 @@ button {
     display:flex;
     justify-self:flex-end;
 }
-.pedido {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 20px;
-    width: 190px; /* Ancho fijo para cada elemento pedido */
-    
-}
+
 .variasopciones_between{
     display: flex;
     flex-wrap: wrap;

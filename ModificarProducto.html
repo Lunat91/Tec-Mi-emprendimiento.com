@@ -12,118 +12,113 @@
     <link href="https://fonts.googleapis.com/css2?family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <div class="encabezadoaz">
-        <nav class="alineado_izq">
-            <!-- HOME -->
-            <a href="index.html">
-                <img src="Images\Logos\Miemprendimiento.png" alt="menú" class="imgI">
-            </a>
-  
-        </nav>
-        <nav class="alineado_der">
-            <ul>
-                    <label for="btn-modal1">
-                    <img src="Images\Logos\usuario.png" alt="usuario" class="imgI">
-                    </label>
-                    <input type="checkbox" id="btn-modal1"> <!-- Ventana de búsqueda encima de todo -->
-                    <div class="modal1">
-                        <div class="modal-container1">
-                            <h2 class="h2m">Menú</h2>
-                            <div class="flexspace1">
-                                <a href="Empresa1Perfil(vistaempresa).html" class="button-link buttonmenu"><button class="lalal">Ver perfil</button></a>
-                                <a href="modificarempresa.html" class="button-link buttonmenu"><button class="lalal">Editar mi perfil</button></a>
-                                <a href="Iniciarsesion.html" class="button-link buttonmenu"><button class="lalal">Cerrar sesión</button></a>
-                            </div>
-                        </div>
-                    </div>
-                
-                <li><a href="PedidosPendientes.html"><img src="Images\Logos\carro-de-la-compra.png" alt="carrito" class="imgI"></a></li>
-                <!--<li><a href="adminindex.html"><span class="material-symbols-outlined" alt="accederadmin">shield_person</span></a></li>-->
-            </ul>
-        </nav>
-    </div> 
-</header>
+    <div class="wrapper">
 
-    <div class="margenes_generales">
-        <div class="uno"></div>
-        <div class="seis"> <h2>Modificar Producto</h2></div>
-        <div class="uno"></div>  <!--Título-->
-
-        <div class="cuatro">
-            Imagen 
-            <div class="column-form">
-                <img src="Images\Productos Rótelo\spider-cat.png" alt="Spider-cat" class="imgp">
-            </div>
-            <input type="file" class="cuatro" accept="image/*">
-        </div>
-        <div class="cuatro"> 
-            <div>
-                Descripción
-                <textarea  rows="7" cols="15" class="transparente_negro cuadro" placeholder="Descripción">Sticker de Spider - Cat animado Hecho en vinilo adhesivo Resistente al agua Dimensiones: 5.4cm x 4.5cm</textarea>
-            </div>
-        </div>  <!--imagen y descripcion-->
-        
-    
-        <div class="cuatro"> 
-            Nombre de producto
-            <div class="ocho"></div>
-            <textarea rows="2" cols="10" class="transparente_negro cuadro" placeholder="Nombre del producto">Spider-Cat</textarea>
-        </div>
-        <div class="uno"></div>
-        <div class="dos"> 
-            Precio
-            <h2 class="transparente_negro cuadro"> <input type="number" class="transparente_negro" placeholder="Precio" step="1000"></h2>
-        </div> 
-        <div class="uno"></div>
-    
-    
-        <div class="ocho"></div>
-    
-        <div class="uno"></div>
-        <div class="dos"> 
-            <a href="Empresa1Perfil(vistaempresa).html">
-                <div class="botonv"> Guardar cambios</div>
-             </a>
-        </div>
-
-        <div class="dos"> 
-            <label for="btn-cambios">
-                <div class="botonrosa"> Eliminar Producto</div>
-            </label>
-        </div>
-    
-        
-        <input type="checkbox" id="btn-cambios"> <!--Ventana de busqueda encima de todo-->
-        <div class="cambios">
-            <div class="cambios-container">
-                
-                <p >"¿Estás seguro?"</p>
-                <div class="flexspace">
-                    <a href="ModificarProducto.html">
-                        <p class="botonrosa">Cancelar</p>
+        <header>
+            <div class="encabezadoaz">
+                <nav class="alineado_izq">
+                    <!-- HOME -->
+                    <a href="index.html">
+                        <img src="Images\Logos\Miemprendimiento.png" alt="menú" class="imgI">
                     </a>
-                    <a href="Empresa1Perfil(vistaempresa).html">
-                        <p class="botonv">Confirmar</p>
-                    </a> 
+        
+                </nav>
+                <nav class="alineado_der">
+                    <ul>
+                            <label for="btn-modal1">
+                            <img src="Images\Logos\usuario.png" alt="usuario" class="imgI">
+                            </label>
+                            <input type="checkbox" id="btn-modal1"> <!-- Ventana de búsqueda encima de todo -->
+                            <div class="modal1">
+                                <div class="modal-container1">
+                                    <h2 class="h2m">Menú</h2>
+                                    <div class="flexspace1">
+                                        <a href="Empresa1Perfil(vistaempresa).html" class="button-link buttonmenu"><button class="lalal">Ver perfil</button></a>
+                                        <a href="modificarempresa.html" class="button-link buttonmenu"><button class="lalal">Editar mi perfil</button></a>
+                                        <a href="Iniciarsesion.html" class="button-link buttonmenu"><button class="lalal">Cerrar sesión</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                    </ul>
+                </nav>
+            </div> 
+        </header>
+    
+        <div class="margenes_generales">
+            <div class="uno"></div>
+            <div class="seis"> <h2>Modificar Producto</h2></div>
+            <div class="uno"></div>  <!--Título-->
+    
+            <form action="DB/modificar_producto.php" method="post" enctype="multipart/form-data" class="ocho">
+    
+                <div class="ocho centro">
+                    <div class="cuatro">
+                        <label for="foto" class="espacioFormlariosLabel">Imagen</label>
+                        <input type="file" id="foto" name="foto" class="espacioFormlariosInput" accept="image/*">
+                    </div>
+                    <div class="uno"></div>
+                    <div class="tres">
+                        <label for="nombreProducto" class="espacioFormlariosLabel"> Nombre del producto</label>
+                        <input type="text" id="nombreProducto" name="nombreProducto" class="transparente_negro cuadro espacioFormlariosInput" value="Spider - Cat">
+                    </div>
+                </div>
+                
+                <div class="ocho centro">
+                    <div class="cuatro">
+                        <label for="descripcionProducto" class="espacioFormlariosLabel">Descripción</label>
+                        <textarea id="descripcionProducto" name="descripcionProducto" class="transparente_negro cuadro espacioFormlariosInputIzq">Sticker de Spider - Cat animado Hecho en vinilo adhesivo Resistente al agua Dimensiones: 5.4cm x 4.5cm</textarea>
+                    </div>
+                    <div class="uno"></div>
+                    <div class="tres">
+                        <label for="precioProducto" class="espacioFormlariosLabel">Precio:</label>
+                    <input type="number" class="transparente_negro cuadro espacioFormlariosInputIzq" placeholder="$" step="1000" id="precioProducto" name="precioProducto" value="2000">
+                    </div>
+                </div>
+            
+                <div class="ocho"></div>
+                <div class="centro">
+                    <div class="cuatro">
+                        <input type="submit" value="Guardar cambios" class="botonv kodchasan-regular ">
+                        <div class="uno"></div>
+                        <input type="submit" value="Cancelar" class="botonaz kodchasan-regular ">
+                    </div>
+                    <div class="uno"></div>
+                    <div class="tres">
+                        <input type="submit" value="Eliminar producto" class="botonrosa kodchasan-regular ">
+                    </div>
+                </div>
+            </form>
+    
+            <input type="checkbox" id="btn-cambios"> <!--Ventana de busqueda encima de todo-->
+            <div class="cambios">
+                <div class="cambios-container">
+                    
+                    <p >"¿Estás seguro?"</p>
+                    <div class="flexspace">
+                        <a href="ModificarProducto.html">
+                            <p class="botonrosa">Cancelar</p>
+                        </a>
+                        <a href="Empresa1Perfil(vistaempresa).html">
+                            <p class="botonv">Confirmar</p>
+                        </a> 
+                    </div>
                 </div>
             </div>
+    
+            <div class="uno"></div>
+    
         </div>
-
-        <div class="uno"></div>
-
+    
+        <footer class="pieaz">
+          <figure> 
+            <img src="Images/Logos/Re-brand logo final.png" alt="Moon Desing" class="img2">
+        </figure>
+            <nav class="listaEmpresa">
+                <ul>
+                    <li><a href="Empresa1Perfil(vistaempresa).html">Home</a></li>
+                </ul>
+            </nav>
+        </footer>
     </div>
-
-    <footer class="pieaz">
-      <figure> 
-        <img src="Images/Logos/Re-brand logo final.png" alt="Moon Desing" class="img2">
-    </figure>
-        <nav>
-            <ul>
-                <li><a href="Empresa1Perfil(vistaempresa).html">Home</a></li>
-                <li><a href="PedidosPendientes.html">Pedidos pendientes</a></li>
-            </ul>
-        </nav>
-    </footer>
 </body>
 </html>

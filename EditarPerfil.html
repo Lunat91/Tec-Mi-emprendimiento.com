@@ -13,160 +13,162 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     </head>
 <body>
-    <header>
-        <div class="encabezado">
-            <nav class="alineado_izq">
-                <!-- HOME -->
-                <a href="index.html">
-                    <img src="Images\Logos\Miemprendimiento.png" alt="menú" class="imgI">
-                </a>
-        
-                <!-- BÚSQUEDA -->
-                <label for="btn-modaaal">
-                    <img src="Images\Logos\buscar.png" alt="búsqueda" class="imgI"> 
-                </label>
-                <input type="checkbox" id="btn-modaaal"> <!-- Ventana de búsqueda encima de todo -->
-                <div class="modal">
-                    <div class="modal-container">
-                        <h2>Búsqueda</h2>
-                        <div class="flexspace">
-                            <a href="BusquedaEmpresa.html" class="button-link"><button>Por empresa</button></a>
-                            <a href="BusquedaProducto.html" class="button-link"><button>Por producto</button></a>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-            <nav class="alineado_der">
-                <ul>
-                    <label for="btn-modal1">
-                    <img src="Images\Logos\usuario.png" alt="usuario" class="imgI">
+    <div class="wrapper">
+        <header>
+            <div class="encabezado">
+                <nav class="alineado_izq">
+                    <!-- HOME -->
+                    <a href="index.html">
+                        <img src="Images\Logos\Miemprendimiento.png" alt="menú" class="imgI">
+                    </a>
+            
+                    <!-- BÚSQUEDA -->
+                    <label for="btn-modaaal">
+                        <img src="Images\Logos\buscar.png" alt="búsqueda" class="imgI"> 
                     </label>
-                    <input type="checkbox" id="btn-modal1"> <!-- Ventana de búsqueda encima de todo -->
-                    <div class="modal1">
-                        <div class="modal-container1">
-                            <h2 class="h2m">Menú</h2>
-                            <div class="flexspace1">
-                                <a href="Usuario.html" class="button-link buttonmenu"><button class="lalal">Ver perfil</button></a>
-                                <a href="EditarPerfil.html" class="button-link buttonmenu"><button class="lalal">Editar mi perfil</button></a>
-                                <a href="Iniciarsesion.html" class="button-link buttonmenu"><button class="lalal">Cerrar sesión</button></a>
+                    <input type="checkbox" id="btn-modaaal"> <!-- Ventana de búsqueda encima de todo -->
+                    <div class="modal">
+                        <div class="modal-container">
+                            <h2>Búsqueda</h2>
+                            <div class="flexspace">
+                                <a href="BusquedaEmpresa.html" class="button-link"><button>Por empresa</button></a>
+                                <a href="BusquedaProducto.html" class="button-link"><button>Por producto</button></a>
                             </div>
                         </div>
                     </div>
+                </nav>
+                <nav class="alineado_der">
+                    <ul>
+                        <label for="btn-modal1">
+                        <img src="Images\Logos\usuario.png" alt="usuario" class="imgI">
+                        </label>
+                        <input type="checkbox" id="btn-modal1"> <!-- Ventana de búsqueda encima de todo -->
+                        <div class="modal1">
+                            <div class="modal-container1">
+                                <h2 class="h2m">Menú</h2>
+                                <div class="flexspace1">
+                                    <a href="Usuario.html" class="button-link buttonmenu"><button class="lalal">Ver perfil</button></a>
+                                    <a href="EditarPerfil.html" class="button-link buttonmenu"><button class="lalal">Editar mi perfil</button></a>
+                                    <a href="Iniciarsesion.html" class="button-link buttonmenu"><button class="lalal">Cerrar sesión</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </ul>
+                </nav>
+            </div> 
+        </header>
+
+    
+        <div class="margenes_generales content">
+            <div class="uno"></div>
+            <div class="dos"> 
+                <img src="Images\Logos\perfilPredeterminado.png" alt="Perfil 1" class="imgperfil">
+                <!--**-->
+            </div>
+            <div class="cuatro">
+                <div>
+                    <h3>Editar información personal</h3> 
+                </div>
+            </div>
+            <div class="uno"></div>
+            <form action="DB/editar_informacion.php" method="post" enctype="multipart/form-data" class="ocho">
+                <div class="">
+        
+                    <div class="centro">
+                        <div class="uno"></div>
+                        <div class="dos">
+                            <label for="nickName" class="espacioFormlariosLabel"> Nombre de usuario: </label>
+                        </div>
+                        <div class="tres">
+                            <input type="text" id="nickName" name="nickName" class="espacioFormlariosInput cuadroTexto kodchasan-regular" value="Mateo Ruiz">
+                        </div>
+                        <span class="material-symbols-outlined uno">
+                            edit
+                        </span>
+                    </div>
+        
+                    <div class="centro">
+                        <div class="uno"></div>
+                        <div class="dos">
+                            <label for="fullName" class="espacioFormlariosLabel"> Nombre completo: </label>
+                        </div>
+                        <div class="tres">
+                            <input type="text" id="fullName" name="fullName" class="espacioFormlariosInput cuadroTexto kodchasan-regular" value="Juan Mateo Ruiz López">
+                        </div>
+                        <span class="material-symbols-outlined uno">
+                            edit
+                        </span>
+                    </div>
+        
+                    <div class="centro">
+                        <div class="uno"></div>
+                        <div class="dos">
+                            <label for="correoUsuario" class="espacioFormlariosLabel"> Correo: </label>
+                        </div>
+                        <div class="tres">
+                            <input type="email" id="correoUsuario" name="correoUsuario" class="espacioFormlariosInput cuadroTexto kodchasan-regular" value="MegaMatt22@gmail.com">
+                        </div>
+                        <span class="material-symbols-outlined uno">
+                            edit
+                        </span>
+                    </div>
+        
+                    <div class="centro">
+                        <div class="uno"></div>
+                        <div class="dos">
+                            <label for="passwordUsuario" class="espacioFormlariosLabel"> Contraseña: </label>
+                        </div>
+                        <div class="tres">
+                            <input type="password" id="passwordUsuario" name="passwordUsuario" class="espacioFormlariosInput cuadroTexto kodchasan-regular" value="MegaMatt22.">
+                        </div>
+                        <span class="material-symbols-outlined uno">
+                            edit
+                        </span>
+                    </div>
+        
+                    <div class="centro">
+                        <div class="uno"></div>
+                        <div class="dos">
+                            <label for="celUsuario" class="espacioFormlariosLabel"> Celular: </label>
+                        </div>
+                        <div class="tres">
+                            <input type="tel" id="celUsuario" name="celUsuario" class="espacioFormlariosInput cuadroTexto kodchasan-regular" value="3205625159" maxlength="10">
+                        </div>
+                        <span class="material-symbols-outlined uno">
+                            edit
+                        </span>
+                    </div>
+                    
+                    <div class="ocho"></div>
+                    <div class="centro">
+                        <div class="dos cero"></div>
+                        <div class="cuatro cien">
+                            <input type="submit" value="Guardar cambios" class="botonv kodchasan-regular ">
+                        </div>
+                        <div class="dos cero"></div>
+                    </div>
+        
+                </div>
+        
+            </form>
+        
+        </div>
+        <footer class="pie">
+            <figure> 
+                <img src="Images/Logos/Re-brand logo final.png" alt="Moon Desing" class="img2">
+            </figure> 
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <label for="btn-modaaal">
+                        <li>Búsqueda</li>
+                    </label>
+                    <li><a href="Usuario.html">Usuario</a></li>
                 </ul>
             </nav>
-        </div> 
-    </header>
-
-
-<div class="margenes_generales">
-    <div class="uno"></div>
-    <div class="dos"> 
-        <img src="Images\Logos\perfilPredeterminado.png" alt="Perfil 1" class="imgperfil">
-        <!--**-->
+        </footer>
+    
     </div>
-    <div class="cuatro">
-        <div>
-            <h3>Editar información personal</h3> 
-        </div>
-    </div>
-    <div class="uno"></div>
-    <form action="DB/editar_informacion.php" method="post" enctype="multipart/form-data" class="ocho">
-        <div class="">
-
-            <div class="centro">
-                <div class="uno"></div>
-                <div class="dos">
-                    <label for="nickName" class="espacioFormlariosLabel"> Nombre completo: </label>
-                </div>
-                <div class="tres">
-                    <input type="text" id="nickName" name="nickName" class="espacioFormlariosInput cuadroTexto kodchasan-regular" value="Mateo Ruiz">
-                </div>
-                <span class="material-symbols-outlined uno">
-                    edit
-                </span>
-            </div>
-
-            <div class="centro">
-                <div class="uno"></div>
-                <div class="dos">
-                    <label for="fullName" class="espacioFormlariosLabel"> Nombre completo: </label>
-                </div>
-                <div class="tres">
-                    <input type="text" id="fullName" name="fullName" class="espacioFormlariosInput cuadroTexto kodchasan-regular" value="Juan Mateo Ruiz López">
-                </div>
-                <span class="material-symbols-outlined uno">
-                    edit
-                </span>
-            </div>
-
-            <div class="centro">
-                <div class="uno"></div>
-                <div class="dos">
-                    <label for="correoUsuario" class="espacioFormlariosLabel"> Correo: </label>
-                </div>
-                <div class="tres">
-                    <input type="email" id="correoUsuario" name="correoUsuario" class="espacioFormlariosInput cuadroTexto kodchasan-regular" value="MegaMatt22@gmail.com">
-                </div>
-                <span class="material-symbols-outlined uno">
-                    edit
-                </span>
-            </div>
-
-            <div class="centro">
-                <div class="uno"></div>
-                <div class="dos">
-                    <label for="passwordUsuario" class="espacioFormlariosLabel"> Contraseña: </label>
-                </div>
-                <div class="tres">
-                    <input type="password" id="passwordUsuario" name="passwordUsuario" class="espacioFormlariosInput cuadroTexto kodchasan-regular" value="MegaMatt22.">
-                </div>
-                <span class="material-symbols-outlined uno">
-                    edit
-                </span>
-            </div>
-
-            <div class="centro">
-                <div class="uno"></div>
-                <div class="dos">
-                    <label for="celUsuario" class="espacioFormlariosLabel"> Celular: </label>
-                </div>
-                <div class="tres">
-                    <input type="tel" id="celUsuario" name="celUsuario" class="espacioFormlariosInput cuadroTexto kodchasan-regular" value="3205625159" maxlength="10">
-                </div>
-                <span class="material-symbols-outlined uno">
-                    edit
-                </span>
-            </div>
-            
-            <div class="ocho"></div>
-            <div class="centro">
-                <div class="dos cero"></div>
-                <div class="cuatro cien">
-                    <input type="submit" value="Guardar cambios" class="botonv kodchasan-regular ">
-                </div>
-                <div class="dos cero"></div>
-            </div>
-
-        </div>
-
-    </form>
-
-</div>
-<footer class="pie">
-    <figure> 
-        <img src="Images/Logos/Re-brand logo final.png" alt="Moon Desing" class="img2">
-      </figure> 
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <label for="btn-modaaal">
-                <li>Búsqueda</li>
-            </label>
-            <li><a href="Usuario.html">Usuario</a></li>
-        </ul>
-    </nav>
-</footer>
-
 </body>
 
 
