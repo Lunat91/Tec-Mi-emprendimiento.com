@@ -967,7 +967,7 @@ button {
     background-color: #EEFFE0;
     border-radius: 2em;
     box-shadow: 0 2px 10px #A6B49B;
-    padding: 10px;
+    padding: 20px;
 
 }
 
@@ -1114,8 +1114,6 @@ textarea {
     background-color:aliceblue;
     border-radius: 1em;
     margin-top: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 5px;
