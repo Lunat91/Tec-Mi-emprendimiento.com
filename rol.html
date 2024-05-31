@@ -1,52 +1,57 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Mi emprendimiento</title>
-        <link rel="icon" type="image/png" href="Images\Logos\Miemprendimiento.png">
-        <link rel="stylesheet" href="Styles.css">
-        <link rel="stylesheet" href="Responsive1.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-    </head>
-<body >
-    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi emprendimiento</title>
+    <link rel="icon" type="image/png" href="Images/Logos/Miemprendimiento.png">
+    <link rel="stylesheet" href="Styles.css">
+    <link rel="stylesheet" href="Responsive1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <script>
+        function setRole(role) {
+            document.getElementById('roleInput').value = role;
+            document.getElementById('roleForm').submit();
+        }
+    </script>
+</head>
+<body>
     <div class="margenes_generales">
         <div class="ocho cien">
             <h1 class="titulov">Bienvenido a Mi Emprendimiento.com</h1>
         </div>
         <div class="ocho cien">
-            <p >¿Qué rol deseas ejercer?</p>
+            <p>¿Qué rol deseas ejercer?</p>
         </div>
-        <div  class="uno cien"></div>
+        <div class="uno cien"></div>
         <div class="dos cien">
             <div class="cuadro-fondo">
-                <a href="index.html">
-                    <img class="imgrol" src="Images\Logos\carrito-de-compras.png" alt="Spider-cat">
-                        <p class="titulov">Consumidor</p>
+                <a href="#" onclick="setRole('Consumidor')">
+                    <img class="imgrol" src="Images/Logos/carrito-de-compras.png" alt="Consumidor">
+                    <p class="titulov">Consumidor</p>
                 </a>
             </div>
         </div>
-        <div  class="uno cien"></div>
+        <div class="uno cien"></div>
         <div class="dos cien">
             <div class="cuadro-fondo">
-                <a href="crearempresa.html">
-                    <img class="imgrol" src="Images\Logos\empresario.png" alt="Spider-cat">
+                <a href="#" onclick="setRole('Emprendedor')">
+                    <img class="imgrol" src="Images/Logos/empresario.png" alt="Emprendedor">
                     <p class="titulov">Emprendedor</p>
                 </a>
             </div>
         </div>
-        <div  class="uno cien"></div>
- 
-    </div> <!-- fin margenes generales-->
-    
+        <div class="uno cien"></div>
+    </div>
     <div class="ocho">
         <figure> 
-            <img src="Images/Logos/Re-brand logo final.png" alt="Moon Desing" class="imgMD">
+            <img src="Images/Logos/Re-brand logo final.png" alt="Moon Design" class="imgMD">
         </figure>
     </div>
-
+    <form id="roleForm" action="DB/rol.php" method="POST">
+        <input type="hidden" id="roleInput" name="role">
+    </form>
 </body>
 </html>
